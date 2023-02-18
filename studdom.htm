@@ -1,0 +1,123 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><link href="studdom_files/osnovno_003.css" rel="stylesheet" type="text/css"><link href="studdom_files/osnovno_002.css" rel="stylesheet" type="text/css" media="screen"><link href="studdom_files/osnovno.css" rel="stylesheet" type="text/css" media="print"><link href="studdom_files/sviKorisnici_002.css" rel="stylesheet" type="text/css"><link href="studdom_files/sviKorisnici_003.css" rel="stylesheet" type="text/css" media="screen"><link href="studdom_files/sviKorisnici.css" rel="stylesheet" type="text/css" media="print"><link href="studdom_files/studenti_002.css" rel="stylesheet" type="text/css"><link href="studdom_files/studenti_003.css" rel="stylesheet" type="text/css" media="screen"><link href="studdom_files/studenti.css" rel="stylesheet" type="text/css" media="print"><link href="studdom_files/aplikacija.css" rel="stylesheet" type="text/css" media="print"><style type="text/css" media="screen">
+				td#cont {
+					background-image: url(/StudInfo/images/studenti/cont-bg.gif);
+					
+				}
+			</style><style type="text/css">
+			caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			table.list caption,
+			.caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			td#menu table tbody tr td {
+				background-image: url(/StudInfo/images/studenti/menuitem-bg.gif);
+			}
+			td#menu table tbody tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+			div.submenu table tr td {
+				background-image: url(/StudInfo/images/studenti/submenuitem-bg.gif);
+			}
+			div.submenu table tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+		</style><script type="text/javascript" src="studdom_files/jquery.js"></script><script type="text/javascript" src="studdom_files/jquery-extend.js"></script><script type="text/javascript" src="studdom_files/jquery.SI.js"></script><script type="text/javascript" src="studdom_files/jquery.Table2CSV.js"></script><script type="text/javascript" src="studdom_files/javascript.js"></script><script type="text/javascript" src="studdom_files/controls.js"></script><script type="text/javascript" src="studdom_files/menus.js"></script><script type="text/javascript" src="studdom_files/Util.js"></script><script type="text/javascript" src="studdom_files/Position.js"></script><script type="text/javascript" src="studdom_files/Tooltip.js"></script><script type="text/javascript" src="studdom_files/Report.js"></script><script type="text/javascript">
+			<!--
+			function initCalendars() {
+				
+			}
+			//-->
+		</script><script type="text/javascript">
+			<!--
+			function initTBAutocomplete() {
+			
+			}
+			//-->
+		</script><script type="text/javascript" src="studdom_files/forms.js"></script><script type="text/javascript">
+		function initFormValidation()
+		{
+			
+		}
+		</script><script type="text/javascript">
+					function initSessionControl() {}
+				</script><script type="text/javascript"></script><script type="text/javascript">
+			$(window).load(function(e){
+				
+				$("table.list").drawList();
+				
+				EXPORT_ICON = '/StudInfo/images/export.png';
+				$("table.list,table.exportable").Table2CSV_prepare("/StudInfo/file/", ["csvIgnore"], "not-exportable");
+				
+				
+				$(".submitlink").bind('click', function(e) {
+					if (e.which == 2)
+						return false;
+				});
+				
+				
+				$("table.object-edit").formatObjectEdit();
+
+				initCalendars();
+				initTBAutocomplete();
+				initFormValidation();
+				initSessionControl();
+				
+				
+				 
+				$.SI.Form.focusFirst();
+						
+			});
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>Пријаве за дом</title></head>
+	<body><div id="sm3" class="submenu" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a></td></tr></tbody></table></div><div id="sm15" class="submenu" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Одјављивање</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/spisakPrijavljivanja">Списак пријављивања</a></td></tr></tbody></table></div><table style="height: 100%;"><tbody><tr><td id="left"><table id="left-table"><tbody><tr><td style="text-align: center; padding: 5px; font-weight: bold;">Универзитет у Београду - Математички факултет</td></tr><tr><td id="logo"><div class="logo"><img id="grb" src="studdom_files/grb.gif"></div></td></tr><tr><td style="font-weight: bold; text-align: left; padding: 0 10px 5px 10px;">Душан Гарић<br>20/2019</td></tr><tr><td id="menu"><table><tbody><tr><td><a id="m1" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/" onmouseover="showMenu('m1', 'sm1')" onmouseout="hideMenu('sm1')">Прва страна</a></td></tr><tr><td><a id="m2" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/kurseviIGrupe" onmouseover="showMenu('m2', 'sm2')" onmouseout="hideMenu('sm2')">Курсеви и групе</a></td></tr><tr><td><a id="m3" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')">Испити</a></td></tr><tr><td><a id="m4" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/finansijskoStanje" onmouseover="showMenu('m4', 'sm4')" onmouseout="hideMenu('sm4')">Финансије</a></td></tr><tr><td><a id="m5" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/upisaneGodine" onmouseover="showMenu('m5', 'sm5')" onmouseout="hideMenu('sm5')">Уписане године</a></td></tr><tr><td><a id="m6" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/izborPredmeta" onmouseover="showMenu('m6', 'sm6')" onmouseout="hideMenu('sm6')">Избор предмета</a></td></tr><tr><td><a id="m7" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/upisGodine" onmouseover="showMenu('m7', 'sm7')" onmouseout="hideMenu('sm7')">Упис године</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m9" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/molbeStudenta" onmouseover="showMenu('m9', 'sm9')" onmouseout="hideMenu('sm9')">Молбе</a></td></tr><tr><td><a id="m10" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/licniPodaci" onmouseover="showMenu('m10', 'sm10')" onmouseout="hideMenu('sm10')">Лични подаци</a></td></tr><tr><td><a id="m11" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing" onmouseover="showMenu('m11', 'sm11')" onmouseout="hideMenu('sm11')" target="_blank">Упутство</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m13" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/#" onmouseover="showMenu('m13', 'sm13')" onmouseout="hideMenu('sm13')" onclick="print(); return false;">Штампај</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m15" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Кориснички налог</a></td></tr></tbody></table></td></tr><tr><td id="left-footer"></td></tr></tbody></table></td><td id="cont"><a name="vrh" id="vrh"></a><h1>Пријаве за дом</h1><div class="page-date-and-time">18. фебруар 2023. 02:23</div><table name="student" class="object-edit">
+<caption>Подаци о студенту</caption>
+<thead style="display: none;"><tr><th></th></tr></thead><tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody><tr><td style="height: 5px;"></td></tr>
+<tr>
+<th>Индекс</th><td>20/2019</td></tr>
+<tr>
+<th>Име и презиме</th><td>Душан Гарић</td></tr>
+<tr>
+<th>Ниво квалификације</th><td>Основне академске студије</td></tr>
+<tr>
+<th>Студијски програм</th><td>Математика (15.М1)</td></tr>
+<tr>
+<th>Модул</th><td>Статистика, актуарска и финансијска математика (1МС.15)</td></tr>
+<tr>
+<th>Тренутни статус</th><td>Самофинансирање</td></tr>
+<tr>
+<td style="background-color: #FFFFFF; height: 12px; border: none;" colspan="2"></td></tr>
+<tr>
+<th>Уписана година</th><td>2022/2023.</td></tr>
+<tr>
+<th>Датум уписа године</th><td>10. октобар 2022.</td></tr>
+<tr>
+<th>Статус при упису</th><td>Самофинансирање</td></tr>
+<tr><td style="height: 5px;"></td></tr></tbody>
+</table><br><table name="prijaveDom" class="list">
+<caption>Пријаве за дом</caption>
+<thead>
+<tr>
+<th>Школска година</th><th style="text-align: right;">Број укупно остварених ЕСПБ бодова</th><th style="text-align: right;">Број година студирања</th><th style="text-align: right;">Ефикасност студирања</th><th style="text-align: right;">Корективни фактор</th><th style="text-align: right;">Просечна оцена</th><th style="text-align: right;">Број бодова по школском услову</th><th style="text-align: right;">Број бодова по материјалном услову</th><th style="text-align: right;">Укупан број бодова</th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td><a href="javascript: ;" onclick="edit('prijavaDomDetalji?dosijeDom=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPJb84MyvVJT_XM2X7WfbOKuU5T5kYmIMZ2NLzgWoSPRm4M1PcErNLc0pSS4A8tsy8lNTs4ooC9icMDAyMjCbCLgDru3oUWwAAAA%3D%3D', 450, 400, true); return false;">2020/2021.</a></td><td style="text-align: right;">60,00</td><td style="text-align: right;">1</td><td style="text-align: right;">60,00</td><td style="text-align: right;">0</td><td style="text-align: right;">9,86</td><td style="text-align: right;">97,30</td><td style="text-align: right;">0</td><td style="text-align: right;">97,30</td></tr>
+<tr class="evenRow">
+<td><a href="javascript: ;" onclick="edit('prijavaDomDetalji?dosijeDom=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPJb84MyvVJT_XM2X7WfbOKuU5T5kYmIMZ2NLzgWoSPRm4M1PcErNLc0pSS4A8tsy8lNTs4ooC9qcMDAyMjCbCLgCorwEDWwAAAA%3D%3D', 450, 400, true); return false;">2021/2022.</a></td><td style="text-align: right;">110,00</td><td style="text-align: right;">2</td><td style="text-align: right;">55,00</td><td style="text-align: right;">0</td><td style="text-align: right;">8,93</td><td style="text-align: right;">88,65</td><td style="text-align: right;">0</td><td style="text-align: right;">88,65</td></tr>
+</tbody>
+</table><a name="dno" id="dno"></a><div id="quick-bottom" class="non-printable"><hr id="quick-bottom-hr"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/index">Прва страна</a></div><div id="copyright-msg" class="non-printable"><hr>
+												Информациони систем СтудИнфо, верзија 2022-12
+												© 2005-2023 Универзитет у Београду - Математички факултет
+											</div></td><td id="quick" class="non-printable"><ul><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/index">Прва страна</a></div></li></ul></td></tr></tbody></table>
+
+<table class="non-printable" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8; left: 982px; top: 270px;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="studdom_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table></body></html>

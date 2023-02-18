@@ -1,0 +1,120 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><link href="upisgodine_files/osnovno_002.css" rel="stylesheet" type="text/css"><link href="upisgodine_files/osnovno_003.css" rel="stylesheet" type="text/css" media="screen"><link href="upisgodine_files/osnovno.css" rel="stylesheet" type="text/css" media="print"><link href="upisgodine_files/sviKorisnici_002.css" rel="stylesheet" type="text/css"><link href="upisgodine_files/sviKorisnici_003.css" rel="stylesheet" type="text/css" media="screen"><link href="upisgodine_files/sviKorisnici.css" rel="stylesheet" type="text/css" media="print"><link href="upisgodine_files/studenti_002.css" rel="stylesheet" type="text/css"><link href="upisgodine_files/studenti_003.css" rel="stylesheet" type="text/css" media="screen"><link href="upisgodine_files/studenti.css" rel="stylesheet" type="text/css" media="print"><link href="upisgodine_files/aplikacija.css" rel="stylesheet" type="text/css" media="print"><style type="text/css" media="screen">
+				td#cont {
+					background-image: url(/StudInfo/images/studenti/cont-bg.gif);
+					
+				}
+			</style><style type="text/css">
+			caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			table.list caption,
+			.caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			td#menu table tbody tr td {
+				background-image: url(/StudInfo/images/studenti/menuitem-bg.gif);
+			}
+			td#menu table tbody tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+			div.submenu table tr td {
+				background-image: url(/StudInfo/images/studenti/submenuitem-bg.gif);
+			}
+			div.submenu table tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+		</style><script type="text/javascript" src="upisgodine_files/jquery.js"></script><script type="text/javascript" src="upisgodine_files/jquery-extend.js"></script><script type="text/javascript" src="upisgodine_files/jquery.SI.js"></script><script type="text/javascript" src="upisgodine_files/jquery.Table2CSV.js"></script><script type="text/javascript" src="upisgodine_files/javascript.js"></script><script type="text/javascript" src="upisgodine_files/controls.js"></script><script type="text/javascript" src="upisgodine_files/menus.js"></script><script type="text/javascript" src="upisgodine_files/Util.js"></script><script type="text/javascript" src="upisgodine_files/Position.js"></script><script type="text/javascript" src="upisgodine_files/Tooltip.js"></script><script type="text/javascript" src="upisgodine_files/Report.js"></script><script type="text/javascript">
+			<!--
+			function initCalendars() {
+				
+			}
+			//-->
+		</script><script type="text/javascript">
+			<!--
+			function initTBAutocomplete() {
+			
+			}
+			//-->
+		</script><script type="text/javascript" src="upisgodine_files/forms.js"></script><script type="text/javascript">
+		function initFormValidation()
+		{
+			
+		}
+		</script><script type="text/javascript">
+					function initSessionControl() {}
+				</script><script type="text/javascript"></script><script type="text/javascript">
+			$(window).load(function(e){
+				
+				$("table.list").drawList();
+				
+				EXPORT_ICON = '/StudInfo/images/export.png';
+				$("table.list,table.exportable").Table2CSV_prepare("/StudInfo/file/", ["csvIgnore"], "not-exportable");
+				
+				
+				$(".submitlink").bind('click', function(e) {
+					if (e.which == 2)
+						return false;
+				});
+				
+				
+				$("table.object-edit").formatObjectEdit();
+
+				initCalendars();
+				initTBAutocomplete();
+				initFormValidation();
+				initSessionControl();
+				
+				
+				 
+				$.SI.Form.focusFirst();
+						
+			});
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>Упис у школску 2022/23. годину</title><style type="text/css">
+		.bold { font-weight: bold; }
+		li { padding-bottom: 10px; }
+	</style></head>
+	<body><div id="sm3" class="submenu" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a></td></tr></tbody></table></div><div id="sm15" class="submenu" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Одјављивање</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/spisakPrijavljivanja">Списак пријављивања</a></td></tr></tbody></table></div><table style="height: 100%;"><tbody><tr><td id="left"><table id="left-table"><tbody><tr><td style="text-align: center; padding: 5px; font-weight: bold;">Универзитет у Београду - Математички факултет</td></tr><tr><td id="logo"><div class="logo"><img id="grb" src="upisgodine_files/grb.gif"></div></td></tr><tr><td style="font-weight: bold; text-align: left; padding: 0 10px 5px 10px;">Душан Гарић<br>20/2019</td></tr><tr><td id="menu"><table><tbody><tr><td><a id="m1" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/" onmouseover="showMenu('m1', 'sm1')" onmouseout="hideMenu('sm1')">Прва страна</a></td></tr><tr><td><a id="m2" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/kurseviIGrupe" onmouseover="showMenu('m2', 'sm2')" onmouseout="hideMenu('sm2')">Курсеви и групе</a></td></tr><tr><td><a id="m3" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')">Испити</a></td></tr><tr><td><a id="m4" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/finansijskoStanje" onmouseover="showMenu('m4', 'sm4')" onmouseout="hideMenu('sm4')">Финансије</a></td></tr><tr><td><a id="m5" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/upisaneGodine" onmouseover="showMenu('m5', 'sm5')" onmouseout="hideMenu('sm5')">Уписане године</a></td></tr><tr><td><a id="m6" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/izborPredmeta" onmouseover="showMenu('m6', 'sm6')" onmouseout="hideMenu('sm6')">Избор предмета</a></td></tr><tr><td><a id="m7" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/upisGodine" onmouseover="showMenu('m7', 'sm7')" onmouseout="hideMenu('sm7')">Упис године</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m9" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/molbeStudenta" onmouseover="showMenu('m9', 'sm9')" onmouseout="hideMenu('sm9')">Молбе</a></td></tr><tr><td><a id="m10" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/licniPodaci" onmouseover="showMenu('m10', 'sm10')" onmouseout="hideMenu('sm10')">Лични подаци</a></td></tr><tr><td><a id="m11" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing" onmouseover="showMenu('m11', 'sm11')" onmouseout="hideMenu('sm11')" target="_blank">Упутство</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m13" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/#" onmouseover="showMenu('m13', 'sm13')" onmouseout="hideMenu('sm13')" onclick="print(); return false;">Штампај</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m15" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Кориснички налог</a></td></tr></tbody></table></td></tr><tr><td id="left-footer"></td></tr></tbody></table></td><td id="cont"><a name="vrh" id="vrh"></a><h1>Упис у школску 2022/23. годину</h1><div class="page-date-and-time">18. фебруар 2023. 02:29</div><div id="app-messages"><span name="msg-span-1676683793603" class="info">Већ сте уписани у школску 2022/23. годину.</span></div><p>Све информације о упису у вишу годину студија школске 2022/23. биће објављене на сајту <a href="http://velikiupis.matf.bg.ac.rs/" target="_blank">velikiupis.matf.bg.ac.rs</a>.</p><p>За упис у вишу годину студија неопходно је спровести следеће кораке:</p><ul>
+			<li>
+				<div>Проверити да ли су <a href="javascript: ;" onclick="edit('nezakljuceneIspitnePrijave?skolskaGod=2021', 700, 400, true); return false;">евидентиране све оцене у школској 2021/22. години</a></div>
+				<div>Приликом уписа у школску 2022/23. годину, узимају се у обзир само оцене евидентиране у закљученим испитним списковима.</div>
+			</li>
+				
+			<li>
+				<div>Попунити <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/ankete" target="_blank">анкету</a></div>
+				<div>Пажљиво попуњеном анкетом помажете да се унапреди настава на Математичком факултету.</div>
+			</li>
+
+			<li>
+				<div>Попунити <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/dosijeSv20Formular?dosije=H4sIAAAAAAAAAFvzloG1uIhBMjexJE2vuKQ0JTMvLV8vJUnPJb84MyvVM6X7bvaddIsKfiYGJh8G7swUt8Ts0pyS1JLEEgZhn6zEskT9nMS8dH3PvJLU9NQiax8Gtsy8lNTs4kKGOgbGigKg2YIgVXogVXpQVUKPFiz53thuwcTA6MnAWpaYU5paUcQggFDnV5qblFrUtmaqLPeUB91MDAwVBQwMDIxgQ5kZTYRdAGIS3KC3AAAA" target="_blank">ШВ образац</a></div>
+				<div>Према Закону о званичној статистици Републике Србије, обавезно је попуњавање ШВ обрасца.</div>
+			</li>
+			
+			<li>
+				<div>Изабрати <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/izborPredmeta" target="_blank">предмете</a></div>
+				<div>Приликом уписа предмета неопходно је испоштовати законске услове објављене на сајту <a href="http://velikiupis.matf.bg.ac.rs/" target="_blank">velikiupis.matf.bg.ac.rs</a>.</div>
+			</li>
+			
+			<li>
+				<div>Измирити <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/finansijskoStanje" target="_blank">финансијске обавезе</a></div>
+				<div>Уплата је видљива <span class="bold">два</span> дана након плаћања!</div>
+			</li>
+			<li>
+				<div>Поднети онлајн <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/molbeStudenta" target="_blank">молбе</a> (Продужена година / Промена модула / Мировање) за актуелну школску годину (2022/23.)</div>
+				<div>Рок за подношење молби је 30.9.2022. Упис ће бити могућ тек након разрешавања молби.</div>
+			</li>
+		</ul><p>Након реализације свих претходних корака потребно је да поднесете онлајн <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/molbeStudenta" target="_blank">молбу</a> за упис актуелне школске године (2022/23.).</p><a name="dno" id="dno"></a><div id="copyright-msg" class="non-printable"><hr>
+												Информациони систем СтудИнфо, верзија 2022-12
+												© 2005-2023 Универзитет у Београду - Математички факултет
+											</div></td></tr></tbody></table>
+
+
+</body></html>

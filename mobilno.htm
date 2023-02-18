@@ -1,0 +1,114 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><link href="mobilno_files/osnovno_003.css" rel="stylesheet" type="text/css"><link href="mobilno_files/osnovno_002.css" rel="stylesheet" type="text/css" media="screen"><link href="mobilno_files/osnovno.css" rel="stylesheet" type="text/css" media="print"><link href="mobilno_files/sviKorisnici_003.css" rel="stylesheet" type="text/css"><link href="mobilno_files/sviKorisnici.css" rel="stylesheet" type="text/css" media="screen"><link href="mobilno_files/sviKorisnici_002.css" rel="stylesheet" type="text/css" media="print"><link href="mobilno_files/studenti_002.css" rel="stylesheet" type="text/css"><link href="mobilno_files/studenti_003.css" rel="stylesheet" type="text/css" media="screen"><link href="mobilno_files/studenti.css" rel="stylesheet" type="text/css" media="print"><link href="mobilno_files/aplikacija.css" rel="stylesheet" type="text/css" media="print"><style type="text/css" media="screen">
+				td#cont {
+					background-image: url(/StudInfo/images/studenti/cont-bg.gif);
+					
+				}
+			</style><style type="text/css">
+			caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			table.list caption,
+			.caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			td#menu table tbody tr td {
+				background-image: url(/StudInfo/images/studenti/menuitem-bg.gif);
+			}
+			td#menu table tbody tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+			div.submenu table tr td {
+				background-image: url(/StudInfo/images/studenti/submenuitem-bg.gif);
+			}
+			div.submenu table tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+		</style><script type="text/javascript" src="mobilno_files/jquery.js"></script><script type="text/javascript" src="mobilno_files/jquery-extend.js"></script><script type="text/javascript" src="mobilno_files/jquery.SI.js"></script><script type="text/javascript" src="mobilno_files/jquery.Table2CSV.js"></script><script type="text/javascript" src="mobilno_files/javascript.js"></script><script type="text/javascript" src="mobilno_files/controls.js"></script><script type="text/javascript" src="mobilno_files/menus.js"></script><script type="text/javascript" src="mobilno_files/Util.js"></script><script type="text/javascript" src="mobilno_files/Position.js"></script><script type="text/javascript" src="mobilno_files/Tooltip.js"></script><script type="text/javascript" src="mobilno_files/Report.js"></script><script type="text/javascript">
+			<!--
+			function initCalendars() {
+				
+			}
+			//-->
+		</script><script type="text/javascript">
+			<!--
+			function initTBAutocomplete() {
+			
+			}
+			//-->
+		</script><script type="text/javascript" src="mobilno_files/forms.js"></script><script type="text/javascript">
+		function initFormValidation()
+		{
+			
+		}
+		</script><script type="text/javascript" src="mobilno_files/jquery.cookie.js"></script><script type="text/javascript" src="mobilno_files/jquery.SessionControl.js"></script><script type="text/javascript">
+					function initSessionControl() {
+						$.SessionControl(1800,
+							"/StudInfo/scripts/osveziSesiju");
+					}
+				</script><script type="text/javascript"></script><script type="text/javascript">
+			$(window).load(function(e){
+				
+				$("table.list").drawList();
+				
+				EXPORT_ICON = '/StudInfo/images/export.png';
+				$("table.list,table.exportable").Table2CSV_prepare("/StudInfo/file/", ["csvIgnore"], "not-exportable");
+				
+				
+				$(".submitlink").bind('click', function(e) {
+					if (e.which == 2)
+						return false;
+				});
+				
+				
+				$("table.object-edit").formatObjectEdit();
+
+				initCalendars();
+				initTBAutocomplete();
+				initFormValidation();
+				initSessionControl();
+				
+				
+				 
+				$.SI.Form.focusFirst();
+				
+				$.cookie('vremeOsvezavanja', new Date().getTime(), { path: '/' });
+						
+			});
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>Налог за уплату и QR код</title></head>	
+	<body><div id="sm3" class="submenu" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a></td></tr></tbody></table></div><div id="sm15" class="submenu" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Одјављивање</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/spisakPrijavljivanja">Списак пријављивања</a></td></tr></tbody></table></div><table style="height: 100%;"><tbody><tr><td id="left"><table id="left-table"><tbody><tr><td style="text-align: center; padding: 5px; font-weight: bold;">Универзитет у Београду - Математички факултет</td></tr><tr><td id="logo"><div class="logo"><img id="grb" src="prvastrana_files/grb.gif"></div></td></tr><tr><td style="font-weight: bold; text-align: left; padding: 0 10px 5px 10px;">Душан Гарић<br>20/2019</td></tr><tr><td id="menu"><table><tbody><tr><td><a id="m1" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/" onmouseover="showMenu('m1', 'sm1')" onmouseout="hideMenu('sm1')">Прва страна</a></td></tr><tr><td><a id="m2" href="kursigrupe1.htm" onmouseover="showMenu('m2', 'sm2')" onmouseout="hideMenu('sm2')">Курсеви и групе</a></td></tr><tr><td><a id="m3" href="ispiti.htm" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')">Испити</a></td></tr><tr><td><a id="m4" href="financije.htm" onmouseover="showMenu('m4', 'sm4')" onmouseout="hideMenu('sm4')">Финансије</a></td></tr><tr><td><a id="m5" href="upisanegodine.htm" onmouseover="showMenu('m5', 'sm5')" onmouseout="hideMenu('sm5')">Уписане године</a></td></tr><tr><td><a id="m6" href="izborpred.htm" onmouseover="showMenu('m6', 'sm6')" onmouseout="hideMenu('sm6')">Избор предмета</a></td></tr><tr><td><a id="m7" href="upisgodine.htm" onmouseover="showMenu('m7', 'sm7')" onmouseout="hideMenu('sm7')">Упис године</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m9" href="molbe.htm" onmouseover="showMenu('m9', 'sm9')" onmouseout="hideMenu('sm9')">Молбе</a></td></tr><tr><td><a id="m10" href="licnipodaci.htm" onmouseover="showMenu('m10', 'sm10')" onmouseout="hideMenu('sm10')">Лични подаци</a></td></tr><tr><td><a id="m11" href="uputstvo.htm" onmouseover="showMenu('m11', 'sm11')" onmouseout="hideMenu('sm11')" target="_blank">Упутство</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m13" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/#" onmouseover="showMenu('m13', 'sm13')" onmouseout="hideMenu('sm13')" onclick="print(); return false;">Штампај</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m15" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Кориснички налог</a></td></tr></tbody></table></td></tr><tr><td id="left-footer"></td></tr></tbody></table></td><td id="cont"><a name="vrh" id="vrh"></a><h1>Активности у последњих 30 дана</h1><div class="page-date-and-time">18. фебруар 2023. 02:19</div><p>	#uplatnica {border: 1px solid; border-collapse: collapse; font-size: 14px; width: 100%; padding: 5px;}
+	#uplatnica td {border: none; padding: 5px; vertical-align: top;}
+	#desna {border-left: 1px solid;}
+	#naslov {text-align: right; font-weight: bold;}
+	#desnaTabela td {border: 1px solid; padding: 5px; height: 0.7cm;}
+	.fusnota {font-size: 10px; padding: 2px;}
+	.granica {border: 1px solid; padding: 3px; height: 1.4cm;}
+	.razmak {width: 0.6cm;}
+	.maloPolje {width: 1.1cm;}
+	</style><table>
+		<tbody><tr> 
+			<td>За приказ НАЛОГА ЗА УПЛАТУ са QR кодом изаберите из падајуће листе <span style="font-weight: bold; ">одговарајућу сврху</span> уплате.</td>
+		</tr>
+		<tr><td class="separator"></td></tr>
+		<tr>
+			<td><form name="form" style="margin-bottom: 0;" method="post" action="pozivNaBrojSaQR" autocomplete="off">
+<input name="form-recovery-name" type="hidden" value="form"><table class="form-table"><tbody><tr class="form-table"><td class="form-table"><select name="pnb" onchange="submitForm(this.form)">
+<option name="-1" value="-nullObject-" selected="selected">Изабери</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMCQDAHBP0jJNAAAA">Универзитетска такса - Центар за развој каријере</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMAgCAGBf2YxNAAAA">доплата за пријаву предмета после предвиђеног рока </option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMBgDAIQeuVlNAAAA">издавање дипломе </option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMJgAACeL3cdNAAAA">издавање докумената на реверс</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMJgBAAvq0ylNAAAA">издавање дупликата дипломе</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMJgCALG72rBNAAAA">издавање дупликата индекса</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMFgDALaWYldNAAAA">издавање пакет програма о положеним испитима</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMFgBACCmZSBNAAAA">издавање плана и програма положених испита по предмету</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMCgAAFpfB91NAAAA">испис са факултета</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMDABAL4eZwhNAAAA">накнадна пријава курса</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMPACAC8D2JhNAAAA">накнадни упис године</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMPABAJVS0QFNAAAA">накнадно пријављивање испита после објављивања листе</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMFgAAAzHa85NAAAA">остала уверења</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMMQCANtSs_NNAAAA">остале уплате</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMFgCAJr3bLlNAAAA">остали захтеви </option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMAgAAPZv3vtNAAAA">поновно полагање испита на захтев студента (поништавање оцене)</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMMgDAGdyYWtNAAAA">признавање испита положених у иностранству (по испиту)</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMMgBAPFCZhxNAAAA">признавање испита са другог факултета (по испиту)</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMBgCAKh_t7dNAAAA">уверење о дипломирању</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMBgAAD5PsMBNAAAA">уверење о положеним испитима (и уверење за визу)</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMJgDAJ3a1F5NAAAA">уверење о редовном студирању</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMDACAARPbpFNAAAA">школарина за основне студије</option><option value="H4sIAAAAAAAAAFvzloG1uIiBPyuxLFEvJzEvXS84I7-oJMPXXNgk4VYQEwNjMANrWWJOaWpFEYMAQpVfaW5SalHbmqmy3FMedDMxMFQUMDADACguYH9NAAAA">школарина за стране студенте</option></select>
+</td></tr></tbody></table><input type="hidden" name="csrfToken" value="9185494925710844590"></form>
+</td>
+		</tr>
+	</tbody></table><a name="dno" id="dno"></a><div id="copyright-msg" class="non-printable"><hr>
+												Информациони систем СтудИнфо, верзија 2022-12
+												© 2005-2023 Универзитет у Београду - Математички факултет
+											</div></td></tr></tbody></table>
+
+
+</body></html>

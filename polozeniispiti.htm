@@ -1,0 +1,163 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><link href="polozeniispiti_files/osnovno_003.css" rel="stylesheet" type="text/css"><link href="polozeniispiti_files/osnovno_002.css" rel="stylesheet" type="text/css" media="screen"><link href="polozeniispiti_files/osnovno.css" rel="stylesheet" type="text/css" media="print"><link href="polozeniispiti_files/sviKorisnici_002.css" rel="stylesheet" type="text/css"><link href="polozeniispiti_files/sviKorisnici_003.css" rel="stylesheet" type="text/css" media="screen"><link href="polozeniispiti_files/sviKorisnici.css" rel="stylesheet" type="text/css" media="print"><link href="polozeniispiti_files/studenti.css" rel="stylesheet" type="text/css"><link href="polozeniispiti_files/studenti_003.css" rel="stylesheet" type="text/css" media="screen"><link href="polozeniispiti_files/studenti_002.css" rel="stylesheet" type="text/css" media="print"><link href="polozeniispiti_files/aplikacija.css" rel="stylesheet" type="text/css" media="print"><style type="text/css" media="screen">
+				td#cont {
+					background-image: url(/StudInfo/images/studenti/cont-bg.gif);
+					
+				}
+			</style><style type="text/css">
+			caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			table.list caption,
+			.caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			td#menu table tbody tr td {
+				background-image: url(/StudInfo/images/studenti/menuitem-bg.gif);
+			}
+			td#menu table tbody tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+			div.submenu table tr td {
+				background-image: url(/StudInfo/images/studenti/submenuitem-bg.gif);
+			}
+			div.submenu table tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+		</style><script type="text/javascript" src="polozeniispiti_files/jquery.js"></script><script type="text/javascript" src="polozeniispiti_files/jquery-extend.js"></script><script type="text/javascript" src="polozeniispiti_files/jquery.SI.js"></script><script type="text/javascript" src="polozeniispiti_files/jquery.Table2CSV.js"></script><script type="text/javascript" src="polozeniispiti_files/javascript.js"></script><script type="text/javascript" src="polozeniispiti_files/controls.js"></script><script type="text/javascript" src="polozeniispiti_files/menus.js"></script><script type="text/javascript" src="polozeniispiti_files/Util.js"></script><script type="text/javascript" src="polozeniispiti_files/Position.js"></script><script type="text/javascript" src="polozeniispiti_files/Tooltip.js"></script><script type="text/javascript" src="polozeniispiti_files/Report.js"></script><script type="text/javascript">
+			<!--
+			function initCalendars() {
+				
+			}
+			//-->
+		</script><script type="text/javascript">
+			<!--
+			function initTBAutocomplete() {
+			
+			}
+			//-->
+		</script><script type="text/javascript" src="polozeniispiti_files/forms.js"></script><script type="text/javascript">
+		function initFormValidation()
+		{
+			
+		}
+		</script><script type="text/javascript">
+					function initSessionControl() {}
+				</script><script type="text/javascript"></script><script type="text/javascript">
+			$(window).load(function(e){
+				
+				$("table.list").drawList();
+				
+				EXPORT_ICON = '/StudInfo/images/export.png';
+				$("table.list,table.exportable").Table2CSV_prepare("/StudInfo/file/", ["csvIgnore"], "not-exportable");
+				
+				
+				$(".submitlink").bind('click', function(e) {
+					if (e.which == 2)
+						return false;
+				});
+				
+				
+				$("table.object-edit").formatObjectEdit();
+
+				initCalendars();
+				initTBAutocomplete();
+				initFormValidation();
+				initSessionControl();
+				
+				
+				 
+				$.SI.Form.focusFirst();
+						
+			});
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>Положени испити</title></head>
+	<body><div id="sm3" class="submenu" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a></td></tr></tbody></table></div><div id="sm15" class="submenu" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Одјављивање</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/spisakPrijavljivanja">Списак пријављивања</a></td></tr></tbody></table></div><table style="height: 100%;"><tbody><tr><td id="left"><table id="left-table"><tbody><tr><td style="text-align: center; padding: 5px; font-weight: bold;">Универзитет у Београду - Математички факултет</td></tr><tr><td id="logo"><div class="logo"><img id="grb" src="prvastrana_files/grb.gif"></div></td></tr><tr><td style="font-weight: bold; text-align: left; padding: 0 10px 5px 10px;">Душан Гарић<br>20/2019</td></tr><tr><td id="menu"><table><tbody><tr><td><a id="m1" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/" onmouseover="showMenu('m1', 'sm1')" onmouseout="hideMenu('sm1')">Прва страна</a></td></tr><tr><td><a id="m2" href="kursigrupe1.htm" onmouseover="showMenu('m2', 'sm2')" onmouseout="hideMenu('sm2')">Курсеви и групе</a></td></tr><tr><td><a id="m3" href="ispiti.htm" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')">Испити</a></td></tr><tr><td><a id="m4" href="financije.htm" onmouseover="showMenu('m4', 'sm4')" onmouseout="hideMenu('sm4')">Финансије</a></td></tr><tr><td><a id="m5" href="upisanegodine.htm" onmouseover="showMenu('m5', 'sm5')" onmouseout="hideMenu('sm5')">Уписане године</a></td></tr><tr><td><a id="m6" href="izborpred.htm" onmouseover="showMenu('m6', 'sm6')" onmouseout="hideMenu('sm6')">Избор предмета</a></td></tr><tr><td><a id="m7" href="upisgodine.htm" onmouseover="showMenu('m7', 'sm7')" onmouseout="hideMenu('sm7')">Упис године</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m9" href="molbe.htm" onmouseover="showMenu('m9', 'sm9')" onmouseout="hideMenu('sm9')">Молбе</a></td></tr><tr><td><a id="m10" href="licnipodaci.htm" onmouseover="showMenu('m10', 'sm10')" onmouseout="hideMenu('sm10')">Лични подаци</a></td></tr><tr><td><a id="m11" href="uputstvo.htm" onmouseover="showMenu('m11', 'sm11')" onmouseout="hideMenu('sm11')" target="_blank">Упутство</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m13" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/#" onmouseover="showMenu('m13', 'sm13')" onmouseout="hideMenu('sm13')" onclick="print(); return false;">Штампај</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m15" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Кориснички налог</a></td></tr></tbody></table></td></tr><tr><td id="left-footer"></td></tr></tbody></table></td><td id="cont"><a name="vrh" id="vrh"></a><h1>Активности у последњих 30 дана</h1><div class="page-date-and-time">18. фебруар 2023. 02:19</div><p><thead style="display: none;"><tr><th></th></tr></thead><tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr>
+<td><span>Положено је 17 предмета и освојено 125 ЕСПБ. Просечна оцена је 8,76.<br><br>На
+ списку положених испита се налазе само испити за које је закључен унос 
+резултата. Оцене на испитима за које још није закључен унос можете 
+видети у <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">прегледу полагања испита</a> уколико одговарајући наставници то допуштају својим подешавањима. </span></td></tr>
+<tr>
+<td><table name="ispiti" class="list" width="100%">
+<thead style="display: none;"><tr><th></th></tr></thead><tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="caption oddRow" style="display: none;">
+</tr>
+<tr style="display: none;" class="evenRow">
+<th>Ознака</th><th>Назив</th><th style="width: 1px;">Оцена</th><th style="width: 1px;">ЕСПБ</th><th>Наставник</th><th>Датум</th><th></th></tr>
+<tr class="caption oddRow" style="border: 0px;">
+<td style="border: 0px;" colspan="2">2019/2020, Буџет</td><td style="border: 0px; text-align: right;">9,86</td><td style="border: 0px; text-align: right;">60</td><td style="border: 0px;" colspan="3">7 предмета</td></tr>
+<tr class="evenRow">
+<th>Ознака</th><th>Назив</th><th style="width: 1px;">Оцена</th><th style="width: 1px;">ЕСПБ</th><th>Наставник</th><th>Датум</th><th></th></tr>
+<tr class="oddRow">
+<td>РМ01</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgUFrAwBxPyObUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Програмирање 1</a></td><td style="text-align: right;">9</td><td style="text-align: right;">6</td><td>др Јована Ковачевић</td><td>21. јануар 2020.</td><td></td></tr>
+<tr class="evenRow">
+<td>С2.01</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgUFrIwDnDyTsUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Страни језик</a></td><td style="text-align: right;">10</td><td style="text-align: right;">4</td><td>Ирена Павловић</td><td>23. јануар 2020.</td><td></td></tr>
+<tr class="oddRow">
+<td>М1.02</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgUFrHQASAixhUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Увод у математичку логику</a></td><td style="text-align: right;">10</td><td style="text-align: right;">5</td><td>др Славко Моцоња</td><td>1. фебруар 2020.</td><td></td></tr>
+<tr class="evenRow">
+<td>15-М2.01</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgUFrDQA-YyKPUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Анализа 1</a></td><td style="text-align: right;">10</td><td style="text-align: right;">20</td><td>Јована Николић</td><td>22. јун 2020.</td><td></td></tr>
+<tr class="oddRow">
+<td>РМ02</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgUFrCwBo-06cUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Програмирање 2</a></td><td style="text-align: right;">10</td><td style="text-align: right;">6</td><td>др Иван Чукић</td><td>26. август 2020.</td><td></td></tr>
+<tr class="evenRow">
+<td>15-М1.01</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgUFrLQCoUyX4UQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Линеарна алгебра</a></td><td style="text-align: right;">10</td><td style="text-align: right;">13</td><td>проф. др Горан Ђанковић</td><td>3. септембар 2020.</td><td></td></tr>
+<tr class="oddRow">
+<td>15-М3.01</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgUFrEwBdXi11UQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Геометрија 1</a></td><td style="text-align: right;">10</td><td style="text-align: right;">6</td><td>др Иван Димитријевић</td><td>7. септембар 2020.</td><td></td></tr>
+<tr class="evenRow">
+<td style="background-color: #FFFFFF; height: 20px; border: none;" colspan="7"></td></tr>
+<tr class="caption oddRow" style="border: 0px;">
+<td style="border: 0px;" colspan="2">2020/2021, Буџет</td><td style="border: 0px; text-align: right;">8,00</td><td style="border: 0px; text-align: right;">50</td><td style="border: 0px;" colspan="3">7 предмета</td></tr>
+<tr class="evenRow">
+<th>Ознака</th><th>Назив</th><th style="width: 1px;">Оцена</th><th style="width: 1px;">ЕСПБ</th><th>Наставник</th><th>Датум</th><th></th></tr>
+<tr class="oddRow">
+<td>15-РМ03</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcHgKwC1cLgtUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Увод у организацију и архитектуру рачунара 1</a></td><td style="text-align: right;">9</td><td style="text-align: right;">5</td><td>др Стефан Мишковић</td><td>21. јун 2021.</td><td></td></tr>
+<tr class="evenRow">
+<td>15-М3.02</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcHAEwASj2_vUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Геометрија 2</a></td><td style="text-align: right;">9</td><td style="text-align: right;">6</td><td>проф. др Тијана Шукиловић</td><td>23. септембар 2021.</td><td></td></tr>
+<tr class="oddRow">
+<td>М2.03</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcEgDwB5OmVKUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Анализа 2</a></td><td style="text-align: right;">7</td><td style="text-align: right;">18</td><td>проф. др Дарко Милинковић</td><td>24. септембар 2021.</td><td></td></tr>
+<tr class="evenRow">
+<td>МС5.01</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFwKwBkAH9CUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Увод у вероватноћу</a></td><td style="text-align: right;">9</td><td style="text-align: right;">5</td><td>др Јелена Јоцковић</td><td>25. септембар 2021.</td><td></td></tr>
+<tr class="oddRow">
+<td>М1.04</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgUE_AQDgGYdgUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Алгебра 1</a></td><td style="text-align: right;">9</td><td style="text-align: right;">6</td><td>проф. др Марко Радовановић</td><td>27. септембар 2021.</td><td></td></tr>
+<tr class="evenRow">
+<td>МС5.02</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFwOwBIYXGsUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Увод у статистику</a></td><td style="text-align: right;">7</td><td style="text-align: right;">5</td><td>проф. др Бојана Милошевић</td><td>28. септембар 2021.</td><td></td></tr>
+<tr class="oddRow">
+<td>М4.01</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFgOgDBcASOUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Увод у нумеричку математику</a></td><td style="text-align: right;">6</td><td style="text-align: right;">5</td><td>др Зорица Дражић</td><td>29. септембар 2021.</td><td></td></tr>
+<tr class="evenRow">
+<td style="background-color: #FFFFFF; height: 20px; border: none;" colspan="7"></td></tr>
+<tr class="caption oddRow" style="border: 0px;">
+<td style="border: 0px;" colspan="2">2021/2022, Буџет</td><td style="border: 0px; text-align: right;">8,00</td><td style="border: 0px; text-align: right;">5</td><td style="border: 0px;" colspan="3">1 предмет</td></tr>
+<tr class="evenRow">
+<th>Ознака</th><th>Назив</th><th style="width: 1px;">Оцена</th><th style="width: 1px;">ЕСПБ</th><th>Наставник</th><th>Датум</th><th></th></tr>
+<tr class="oddRow">
+<td>15-М2.31С</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcGMAwCSWe64UQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Комплексна анализа</a></td><td style="text-align: right;">8</td><td style="text-align: right;">5</td><td>др Владимир Божин</td><td>24. септембар 2022.</td><td></td></tr>
+<tr class="evenRow">
+<td style="background-color: #FFFFFF; height: 20px; border: none;" colspan="7"></td></tr>
+<tr class="caption oddRow" style="border: 0px;">
+<td style="border: 0px;" colspan="2">2022/2023, Самофинансирање</td><td style="border: 0px; text-align: right;">8,00</td><td style="border: 0px; text-align: right;">10</td><td style="border: 0px;" colspan="3">2 предмета</td></tr>
+<tr class="evenRow">
+<th>Ознака</th><th>Назив</th><th style="width: 1px;">Оцена</th><th style="width: 1px;">ЕСПБ</th><th>Наставник</th><th>Датум</th><th></th></tr>
+<tr class="oddRow">
+<td>15-М3.03</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcEiAADard1DUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Геометрија 3</a></td><td style="text-align: right;">8</td><td style="text-align: right;">5</td><td>проф. др Мирјана Ђорић</td><td>12. јануар 2023.</td><td></td></tr>
+<tr class="evenRow">
+<td>М2.06</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcEiFQD5aW4VUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Диференцијалне једначине А</a></td><td style="text-align: right;">8</td><td style="text-align: right;">5</td><td>др Марија Микић</td><td>30. јануар 2023.</td><td></td></tr>
+<tr class="oddRow">
+<td style="background-color: #FFFFFF; height: 20px; border: none;" colspan="7"></td></tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table><a name="dno" id="dno"></a><div id="quick-bottom" class="non-printable"><hr id="quick-bottom-hr"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања испита</a> | <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></div><div id="copyright-msg" class="non-printable"><hr>
+												Информациони систем СтудИнфо, верзија 2022-12
+												© 2005-2023 Универзитет у Београду - Математички факултет
+											</div></td><td id="quick" class="non-printable"><ul><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања испита</a></div></li><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></div></li></ul></td></tr></tbody></table>
+
+
+<table class="non-printable invisible" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8; left: 972px; top: 156px;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="polozeniispiti_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table></body></html>

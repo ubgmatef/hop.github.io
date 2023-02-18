@@ -1,0 +1,187 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><script type="text/javascript" src="potvrda_files/jquery.js"></script><script type="text/javascript" src="potvrda_files/jquery-extend.js"></script><script type="text/javascript" src="potvrda_files/jquery.SI.js"></script><script type="text/javascript" src="potvrda_files/jquery.Table2CSV.js"></script><script type="text/javascript" src="potvrda_files/javascript.js"></script><script type="text/javascript" src="potvrda_files/controls.js"></script><script type="text/javascript" src="potvrda_files/menus.js"></script><script type="text/javascript" src="potvrda_files/Util.js"></script><script type="text/javascript" src="potvrda_files/Position.js"></script><script type="text/javascript" src="potvrda_files/Tooltip.js"></script><script type="text/javascript" src="potvrda_files/Report.js"></script><script type="text/javascript">
+			<!--
+			function initCalendars() {
+				
+			}
+			//-->
+		</script><script type="text/javascript">
+			<!--
+			function initTBAutocomplete() {
+			
+			}
+			//-->
+		</script><script type="text/javascript" src="potvrda_files/forms.js"></script><script type="text/javascript">
+		function initFormValidation()
+		{
+			
+		}
+		</script><script type="text/javascript" src="potvrda_files/jquery.cookie.js"></script><script type="text/javascript" src="potvrda_files/jquery.SessionControl.js"></script><script type="text/javascript">
+					function initSessionControl() {
+						$.SessionControl(1800,
+							"/StudInfo/scripts/osveziSesiju");
+					}
+				</script><script type="text/javascript"></script><script type="text/javascript">
+			$(window).load(function(e){
+				
+				$("table.list").drawList();
+				
+				EXPORT_ICON = '/StudInfo/images/export.png';
+				$("table.list,table.exportable").Table2CSV_prepare("/StudInfo/file/", ["csvIgnore"], "not-exportable");
+				
+				
+				$(".submitlink").bind('click', function(e) {
+					if (e.which == 2)
+						return false;
+				});
+				
+				
+				$("table.object-edit").formatObjectEdit();
+
+				initCalendars();
+				initTBAutocomplete();
+				initFormValidation();
+				initSessionControl();
+				
+				
+				 
+				$.SI.Form.focusFirst();
+				
+	setupStudentEditorWindow(''); // potpisnici = ''
+
+				$.cookie('vremeOsvezavanja', new Date().getTime(), { path: '/' });
+						
+			});
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>Потврде - Душан Гарић</title><script language="javascript" src="potvrda_files/potvrde.js"></script><script language="javascript" type="text/javascript" src="potvrda_files/jQuery.potvrde.js"></script><link href="potvrda_files/osnovno_003.css" rel="stylesheet" type="text/css"><link href="potvrda_files/osnovno.css" rel="stylesheet" type="text/css" media="screen"><link href="potvrda_files/osnovno_002.css" rel="stylesheet" type="text/css" media="print"><link href="potvrda_files/potvrde.css" rel="stylesheet" type="text/css"><style type="text/css">
+			@media screen
+			{
+				div#kontrolnaVerzija
+				{
+					display: none;
+				}
+			}
+		
+			@media print
+			{
+				div#kontrolnaVerzija
+				{
+					position: absolute; 
+					top: 0px; 
+					left: 0px;
+					width: 100%;	 
+					height: 100%;
+					background-image: url('/StudInfo/images/kontrolna-verzija-transparentno.png');
+					z-index: 10;
+				}
+			}
+			input#potvrdaPrint
+			{
+				display: none;
+			}
+
+
+		</style><script language="javascript">
+		function postaviRazlog(cb)
+		{
+			var razlogEl = document.getElementsByName("razlog")[0];
+			razlogEl.innerHTML = cb.options[cb.selectedIndex].value
+		}
+
+		function stampaj()
+		{
+			var divKontrolnaVerzija = document.getElementById("kontrolnaVerzija");
+			divKontrolnaVerzija.style.display = 'none';
+			
+			print();
+
+			divKontrolnaVerzija.style.display = '';
+		}
+		</script></head>
+<body><a name="vrh" id="vrh"></a><table id="layout" border="0">
+	<tbody><tr class="non-printable" style="height: 1px;" id="poruke">
+		<td colspan="2">
+			<div id="app-messages">
+<span class="info">Потврда се штампа кликом на дугме „Штампај“</span>
+			</div></td>
+	</tr>
+	<tr>
+		<td id="potvrdaTD" rowspan="3"><table id="potvrdaTab" border="0" align="center">
+	<tbody><tr>
+		<td colspan="2" id="memo">
+		<img src="potvrda_files/memorandum.png" class="memorandum">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" id="data">
+			<a name="mesto" id="highlighted" class="highlighted" title="Место">Београд</a>, <a name="datum" id="highlighted" class="highlighted" title="Датум">18. фебруар 2023.</a><br>
+			Број индекса: <a name="brojIndeksa" id="highlighted" class="highlighted" title="Број индекса">20/2019</a><br>
+		</td>
+	</tr>
+	<tr>
+		<td id="text" colspan="2">
+			<p>
+			Универзитет у Београду, Математички факултет, на захтев који је
+			поднео студент
+			<a name="ime_prezime" id="highlighted" class="highlighted" title="Име и презиме">Душан Гарић</a> издаје следећу
+			</p>
+			<h1>ПОТВРДУ</h1>
+			<p>
+			Студент <a name="ime_prezime" id="highlighted" class="highlighted" title="Име и презиме">Душан Гарић</a>, број индекса 
+			<a name="brojIndeksa" id="highlighted" class="highlighted" title="Број индекса">20/2019</a>, уписао је школску
+			<a name="skolskaGodina" id="highlighted" class="highlighted" title="Школска година">2022/2023</a> годину
+			на Универзитету у Београду, Математичком факултету, студијски програм
+			<a name="smer" id="highlighted" class="highlighted" title="Студијски програм">Математика - основне академске студије</a>, као <a name="status" id="highlighted" class="highlighted" title="Статус">самофинансирајући студент</a>.
+			</p>
+			<p>
+			Потврда се издаје на лични захтев ради 
+			<a name="razlog" id="list,highlighted" class="highlighted list" title="Разлог">добијања визе</a><span id="drugeSvrhe"> и не може се користити у друге сврхе</span>.
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" id="signature">
+			<div class="potvrdaPotpis">
+				ПРОДЕКАН МАТЕМАТИЧКОГ ФАКУЛТЕТА<br><br>
+				проф. др Милош Арсеновић с.р.<br>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" id="notes">
+			<div>
+				* важи без потписа и печата<br>
+				* подаци су генерисани из званичног Информационог система Факултета<br>
+			</div>
+		</td>
+	</tr>
+</tbody></table>
+</td>
+		<td id="linkovi" style="height: 20px; text-align: center;" class="non-printable" nowrap="true">
+			<a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/index">Прва страна</a>
+		</td>
+	</tr>
+	<tr>
+		<td id="izbor" style="height: 1px;" class="non-printable">
+			<div style="height: 19px; font-weight: bold;"><br>Тип потврде</div><br><select name="potvrdaIzbor" id="potvrdaIzbor" style="width: 100%;">
+<option value="upisIStatus-2022" selected="selected">Упис и статус у 2022/2023.</option><option value="busPlus">БусПлус</option></select>
+<br><div style="height: 19px; font-weight: bold; padding-top:5px;">Разлог</div><select name="razlog" onchange="return postaviRazlog(this);">
+<option value="добијања визе" selected="selected">добијања визе</option><option value="конкурисања за стипендију">конкурисања за стипендију</option><option value="конкурисања за студентски дом">конкурисања за студентски дом</option><option value="конкурисања за студентски кредит">конкурисања за студентски кредит</option><option value="конкурисања за кредит">конкурисања за кредит</option><option value="регулисања војне обавезе">регулисања војне обавезе</option><option value="регулисања права на дечији додатак">регулисања права на дечији додатак</option><option value="регулисања породичне пензије">регулисања породичне пензије</option><option value="регулисања инвалидског додатка">регулисања инвалидског додатка</option><option value="регулисања здравствене књижице">регулисања здравствене књижице</option><option value="регулисања легитимације за повлашћену вожњу">регулисања легитимације за повлашћену вожњу</option><option value="регулисања студентске картице">регулисања студентске картице</option><option value="регулисања чланства у библиотеци">регулисања чланства у библиотеци</option><option value="признавања испита на другом факултету">признавања испита на другом факултету</option><option value="учешћа на пројекту">учешћа на пројекту</option></select>
+<br><div style="text-align: center; padding-top:5px;"><input id="stampaj" style="width: 40%; height: 20px;" type="submit" value="Штампај" onclick="return stampaj();"></div>
+			<div style="display: none;"><span style="padding: 0; margin: 0;" class="outer-img-span"><img src="potvrda_files/memorandum_002.png" id="memorandumImg" class="memorandum"></span></div>
+		</td>
+	</tr>
+	<tr>
+		<td id="editor" class="non-printable"><table style="border-collapse: collapse; font-family: Verdana; font-size: 10px; width: 100%;" border="0"><tbody><tr><td style="text-align: left; padding-bottom: 5px;"></td></tr><tr><td style="text-align: right; padding: 0px;"><form name="sacuvaj" method="post" action="preusmeriNaPocetnuStranu"><input type="submit" id="potvrdaPrint" value="Заведи и штампај" style="font-size: 10px; width: 100px;"></form></td></tr></tbody></table></td>
+	</tr>
+</tbody></table><div id="kontrolnaVerzija"></div><a name="dno" id="dno"></a>
+
+
+</body></html>

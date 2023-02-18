@@ -1,0 +1,393 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><link href="izborpred_files/osnovno_003.css" rel="stylesheet" type="text/css"><link href="izborpred_files/osnovno_002.css" rel="stylesheet" type="text/css" media="screen"><link href="izborpred_files/osnovno.css" rel="stylesheet" type="text/css" media="print"><link href="izborpred_files/sviKorisnici_002.css" rel="stylesheet" type="text/css"><link href="izborpred_files/sviKorisnici_003.css" rel="stylesheet" type="text/css" media="screen"><link href="izborpred_files/sviKorisnici.css" rel="stylesheet" type="text/css" media="print"><link href="izborpred_files/studenti_002.css" rel="stylesheet" type="text/css"><link href="izborpred_files/studenti_003.css" rel="stylesheet" type="text/css" media="screen"><link href="izborpred_files/studenti.css" rel="stylesheet" type="text/css" media="print"><link href="izborpred_files/aplikacija.css" rel="stylesheet" type="text/css" media="print"><style type="text/css" media="screen">
+				td#cont {
+					background-image: url(/StudInfo/images/studenti/cont-bg.gif);
+					
+				}
+			</style><style type="text/css">
+			caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			table.list caption,
+			.caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			td#menu table tbody tr td {
+				background-image: url(/StudInfo/images/studenti/menuitem-bg.gif);
+			}
+			td#menu table tbody tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+			div.submenu table tr td {
+				background-image: url(/StudInfo/images/studenti/submenuitem-bg.gif);
+			}
+			div.submenu table tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+		</style><script type="text/javascript" src="izborpred_files/jquery.js"></script><script type="text/javascript" src="izborpred_files/jquery-extend.js"></script><script type="text/javascript" src="izborpred_files/jquery.SI.js"></script><script type="text/javascript" src="izborpred_files/jquery.Table2CSV.js"></script><script type="text/javascript" src="izborpred_files/javascript.js"></script><script type="text/javascript" src="izborpred_files/controls.js"></script><script type="text/javascript" src="izborpred_files/menus.js"></script><script type="text/javascript" src="izborpred_files/Util.js"></script><script type="text/javascript" src="izborpred_files/Position.js"></script><script type="text/javascript" src="izborpred_files/Tooltip.js"></script><script type="text/javascript" src="izborpred_files/Report.js"></script><script type="text/javascript">
+			<!--
+			function initCalendars() {
+				
+			}
+			//-->
+		</script><script type="text/javascript">
+			<!--
+			function initTBAutocomplete() {
+			
+			}
+			//-->
+		</script><script type="text/javascript" src="izborpred_files/forms.js"></script><script type="text/javascript">
+		function initFormValidation()
+		{
+			
+					document.forms['form'].onsubmit = function(e)
+					{
+						
+						var fields = new Array();
+						
+							fields.push(new ValField('napomena', 'text-area', 'Напомена'
+								
+								,
+								{
+									maxlength: 2000,
+									
+									end: ''
+								}
+								));
+						
+						var valid = validateForm('form', fields);
+						return valid;
+					}
+				
+		}
+		</script><script type="text/javascript" src="izborpred_files/jquery.cookie.js"></script><script type="text/javascript" src="izborpred_files/jquery.SessionControl.js"></script><script type="text/javascript">
+					function initSessionControl() {
+						$.SessionControl(1800,
+							"/StudInfo/scripts/osveziSesiju");
+					}
+				</script><script type="text/javascript"></script><script type="text/javascript">
+			$(window).load(function(e){
+				
+				$("table.list").drawList();
+				
+				EXPORT_ICON = '/StudInfo/images/export.png';
+				$("table.list,table.exportable").Table2CSV_prepare("/StudInfo/file/", ["csvIgnore"], "not-exportable");
+				
+				
+				$(".submitlink").bind('click', function(e) {
+					if (e.which == 2)
+						return false;
+				});
+				
+				
+				$("table.object-edit").formatObjectEdit();
+
+				initCalendars();
+				initTBAutocomplete();
+				initFormValidation();
+				initSessionControl();
+				
+				
+					new Tooltip('AutogenID-738519262', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-1502014193', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-1853582421', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-911087503', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-1645742761', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-1040134787', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-1463819857', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-1650401602', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-924132098', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-1893861279', 'Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br/><br/>- Случајни процеси (М5.06)<br/><br/>У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-73080657', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-990564411', 'Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br/><br/>- Математичка статистика (М5.05)<br/><br/>У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-1183743450', 'Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br/><br/>- Случајни процеси (М5.06)<br/><br/>У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-647813668', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-836570577', 'Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br/><br/>- Случајни процеси (М5.06)<br/><br/>У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-1570446661', 'Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br/><br/>- Математичка статистика (М5.05)<br/><br/>У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('AutogenID-2049258830', 'У 1. и 2. семестру не постоји курс.');
+				
+					new Tooltip('quick-help-img-1438846411-2025764457', 'Држите притиснуто дугме Ctrl приликом избора ако желите да изаберете више од једне ставке.<br/><br/>Ако желите да поништите избор неке ставке, држите притиснуто дугме Ctrl, и кликните на ту ставку.');
+				
+				$.cookie('vremeOsvezavanja', new Date().getTime(), { path: '/' });
+						
+			});
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>Планирање предмета за школску 2023/2024. годину</title><style>
+	p {
+		margin: 1px 5px 1px 5px;
+		text-align: justify;
+	}
+	li {
+		margin: 1px 5px 1px 5px;
+		text-align: justify;
+	}
+	</style></head>
+	<body><div id="sm3" class="submenu" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a></td></tr></tbody></table></div><div id="sm15" class="submenu" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Одјављивање</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/spisakPrijavljivanja">Списак пријављивања</a></td></tr></tbody></table></div><table style="height: 100%;"><tbody><tr><td id="left"><table id="left-table"><tbody><tr><td style="text-align: center; padding: 5px; font-weight: bold;">Универзитет у Београду - Математички факултет</td></tr><tr><td id="logo"><div class="logo"><img id="grb" src="prvastrana_files/grb.gif"></div></td></tr><tr><td style="font-weight: bold; text-align: left; padding: 0 10px 5px 10px;">Душан Гарић<br>20/2019</td></tr><tr><td id="menu"><table><tbody><tr><td><a id="m1" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/" onmouseover="showMenu('m1', 'sm1')" onmouseout="hideMenu('sm1')">Прва страна</a></td></tr><tr><td><a id="m2" href="kursigrupe1.htm" onmouseover="showMenu('m2', 'sm2')" onmouseout="hideMenu('sm2')">Курсеви и групе</a></td></tr><tr><td><a id="m3" href="ispiti.htm" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')">Испити</a></td></tr><tr><td><a id="m4" href="financije.htm" onmouseover="showMenu('m4', 'sm4')" onmouseout="hideMenu('sm4')">Финансије</a></td></tr><tr><td><a id="m5" href="upisanegodine.htm" onmouseover="showMenu('m5', 'sm5')" onmouseout="hideMenu('sm5')">Уписане године</a></td></tr><tr><td><a id="m6" href="izborpred.htm" onmouseover="showMenu('m6', 'sm6')" onmouseout="hideMenu('sm6')">Избор предмета</a></td></tr><tr><td><a id="m7" href="upisgodine.htm" onmouseover="showMenu('m7', 'sm7')" onmouseout="hideMenu('sm7')">Упис године</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m9" href="molbe.htm" onmouseover="showMenu('m9', 'sm9')" onmouseout="hideMenu('sm9')">Молбе</a></td></tr><tr><td><a id="m10" href="licnipodaci.htm" onmouseover="showMenu('m10', 'sm10')" onmouseout="hideMenu('sm10')">Лични подаци</a></td></tr><tr><td><a id="m11" href="uputstvo.htm" onmouseover="showMenu('m11', 'sm11')" onmouseout="hideMenu('sm11')" target="_blank">Упутство</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m13" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/#" onmouseover="showMenu('m13', 'sm13')" onmouseout="hideMenu('sm13')" onclick="print(); return false;">Штампај</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m15" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Кориснички налог</a></td></tr></tbody></table></td></tr><tr><td id="left-footer"></td></tr></tbody></table></td><td id="cont"><a name="vrh" id="vrh"></a><h1>Активности у последњих 30 дана</h1><div class="page-date-and-time">18. фебруар 2023. 02:19</div><p> плаћате школарину неопходно је да пре уписа уплатите и прву рату 
+школарине. Да би уплата била аутоматски евидентирана за сваку 
+појединачну уплату морате навести <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/pozivNaBroj">исправан позив на број уплате.</a><br>Навођење неисправног позива на број може да произведе продужење процедура, кашњење као и додатне трошкове за студента.</span><span class="warning">У школској 2022/2023. постоје <a href="javascript: ;" onclick="edit('nezakljuceneIspitnePrijave?skolskaGod=2022', 700, 400, true); return false;">испитне пријаве за које није закључен унос резултата</a>.
+ Упис школске 2023/2024. године није могућ док у овим групама не буде 
+закључен унос резултата испита. Обратите се предметном наставнику.</span><span name="msg-span-1676683776886" class="info">У
+ случају да су сви предмети које желите већ аутоматски одабрани, 
+неопходно је да кликнете на дугме „Промени“ како бисте званично 
+потврдили њихов избор.</span><span class="warning">Постоје <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/ankete">анкете за курсеве из текуће године</a> које нисте попунили. Упис школске 2023/2024. године није могућ док не попуните анкете за све пријављене курсеве.</span></div><script language="javascript">
+
+			var predmeti = [''];
+			var predmetiID = [];
+			var predmetiKrediti = [];
+
+
+			predmeti.pop();
+
+			var predmetiIDSkup = {};
+
+			// Prebacuju se prikazani predmeti u skup
+			for (var i = 0; i < predmetiID.length; i++)
+				predmetiIDSkup[predmetiID[i]] = true;
+
+			function dodajPotpunoIzbornePredmete(spisak)
+			{
+				if (spisak.length > 0)
+				{
+					var form = document.forms['form'];
+
+					for (var i = 0; i < spisak.length; i++)
+					{
+						// Proverava se da li je predmet vec vidljiv na strani
+						if (predmetiIDSkup[spisak[i].id] == undefined)
+						{
+							var el = document.createElement("input");
+							var name = (spisak[i].odabranSem1
+									? 'potpuno-izborni1-'
+									: 'potpuno-izborni2-')
+								+ spisak[i].id;
+
+							el.setAttribute("type", "hidden");
+							el.setAttribute("name", name);
+							el.setAttribute("value", "x");
+
+							form.appendChild(el);
+						}
+					}
+
+					var dugme = form['promeniDugme'];
+
+					valid = promeni(dugme, false);
+
+					if (valid)
+					{
+						dugme.disabled = true;
+
+						var valid = submitForm(form);
+
+						if (!form.uspesnoPredat)
+							dugme.disabled = false;
+					}
+
+					return(valid);
+				}
+			}
+
+			function promeni(dugme, uradiSubmit)
+			{
+				var form = dugme.form;
+				var invalidFields = new Array();
+				var valid = true;
+
+				if (uradiSubmit)
+					dugme.disabled = true;
+
+				if (invalidFields.length > 0)
+				{
+					reportEditFormValidation(invalidFields);
+					valid = false;
+				}
+
+				if (uradiSubmit)
+				{
+					if (valid)
+						valid = submitForm(form);
+
+					if (!form.uspesnoPredat)
+						dugme.disabled = false;
+				}
+
+				return(valid);
+			}
+
+
+		</script><br><form name="form" method="post" action="izborPredmetaPromeni" autocomplete="off">
+<input name="form-recovery-name" type="hidden" value="form"><table class="form-table" width="100%"><tbody><tr class="form-table"><td class="form-table"><input name="godZaPlaniranje" type="hidden" value="2023"><table id="cont-polozeniPreth" style="width: 100%;"><caption style="width: 100%; padding-left: 0px; padding-right: 0px;"><a id="switch-polozeniPreth" style="padding-left: 5px;" href="javascript: show('polozeniPreth', false);">Положени испити пре школске 2022/2023.</a></caption><tbody><tr><td style="padding: 0px;"><table name="polozeni" id="polozeniPreth" class="list" style="width: 100%">
+<thead>
+<tr>
+<th width="60px">Ознака</th><th width="35%">Назив</th><th width="6%">ЕСПБ</th><th width="21%">Наставник</th><th style="width: 85px;">Датум</th><th style="text-align: right; width: 40px;">Оцена</th><th></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>РМ01</td><td>Програмирање 1</td><td>6</td><td>Јована Ковачевић</td><td>21. јан. 2020.</td><td>9</td><td></td></tr>
+<tr class="evenRow">
+<td>С2.01</td><td>Страни језик</td><td>4</td><td>Ирена Павловић</td><td>23. јан. 2020.</td><td>10</td><td></td></tr>
+<tr class="oddRow">
+<td>М1.02</td><td>Увод у математичку логику</td><td>5</td><td>Славко Моцоња</td><td>1. феб. 2020.</td><td>10</td><td></td></tr>
+<tr class="evenRow">
+<td>15-М2.01</td><td>Анализа 1</td><td>20</td><td>Јована Николић</td><td>22. јун 2020.</td><td>10</td><td></td></tr>
+<tr class="oddRow highlightedRow">
+<td>РМ02</td><td>Програмирање 2</td><td>6</td><td>Иван Чукић</td><td>26. авг. 2020.</td><td>10</td><td></td></tr>
+<tr class="evenRow">
+<td>15-М1.01</td><td>Линеарна алгебра</td><td>13</td><td>Горан Ђанковић</td><td>3. сеп. 2020.</td><td>10</td><td></td></tr>
+<tr class="oddRow">
+<td>15-М3.01</td><td>Геометрија 1</td><td>6</td><td>Иван Димитријевић</td><td>7. сеп. 2020.</td><td>10</td><td></td></tr>
+<tr class="evenRow">
+<td>15-РМ03</td><td>Увод у организацију и архитектуру рачунара 1</td><td>5</td><td>Стефан Мишковић</td><td>21. јун 2021.</td><td>9</td><td></td></tr>
+<tr class="oddRow">
+<td>15-М3.02</td><td>Геометрија 2</td><td>6</td><td>Тијана Шукиловић</td><td>23. сеп. 2021.</td><td>9</td><td></td></tr>
+<tr class="evenRow">
+<td>М2.03</td><td>Анализа 2</td><td>18</td><td>Дарко Милинковић</td><td>24. сеп. 2021.</td><td>7</td><td></td></tr>
+<tr class="oddRow">
+<td>МС5.01</td><td>Увод у вероватноћу</td><td>5</td><td>Јелена Јоцковић</td><td>25. сеп. 2021.</td><td>9</td><td></td></tr>
+<tr class="evenRow">
+<td>М1.04</td><td>Алгебра 1</td><td>6</td><td>Марко Радовановић</td><td>27. сеп. 2021.</td><td>9</td><td></td></tr>
+<tr class="oddRow">
+<td>МС5.02</td><td>Увод у статистику</td><td>5</td><td>Бојана Милошевић</td><td>28. сеп. 2021.</td><td>7</td><td></td></tr>
+<tr class="evenRow">
+<td>М4.01</td><td>Увод у нумеричку математику</td><td>5</td><td>Зорица Дражић</td><td>29. сеп. 2021.</td><td>6</td><td></td></tr>
+<tr class="oddRow">
+<td>15-М2.31С</td><td>Комплексна анализа</td><td>5</td><td>Владимир Божин</td><td>24. сеп. 2022.</td><td>8</td><td></td></tr>
+<tr class="evenRow">
+<td colspan="7"></td></tr>
+<tr class="oddRow">
+<td colspan="2"><b>Укупно</b></td><td><b>115</b></td><td colspan="4"></td></tr>
+</tbody>
+</table></td></tr></tbody></table>
+<br><br><table id="cont-polozeniUUpisanoj" style="width: 100%;"><caption style="width: 100%; padding-left: 0px; padding-right: 0px;"><a id="switch-polozeniUUpisanoj" style="padding-left: 5px;" href="javascript: show('polozeniUUpisanoj', false);">Положени испити из школске 2022/2023.</a></caption><tbody><tr><td style="padding: 0px;"><table name="polozeniUUpisanojGod" id="polozeniUUpisanoj" class="list" style="width: 100%">
+<thead>
+<tr>
+<th width="60px">Ознака</th><th width="35%">Назив</th><th width="6%">ЕСПБ</th><th width="21%">Наставник</th><th style="width: 85px;">Датум</th><th style="text-align: right; width: 40px;">Оцена</th><th></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>15-М3.03</td><td>Геометрија 3</td><td>5</td><td>Мирјана Ђорић</td><td>12. јан. 2023.</td><td>8</td><td></td></tr>
+<tr class="evenRow">
+<td>М2.06</td><td>Диференцијалне једначине А</td><td>5</td><td>Марија Микић</td><td>30. јан. 2023.</td><td>8</td><td></td></tr>
+<tr class="oddRow">
+<td colspan="7"></td></tr>
+<tr class="evenRow">
+<td colspan="2"><b>Укупно</b></td><td><b>10</b></td><td colspan="4"></td></tr>
+</tbody>
+</table></td></tr></tbody></table>
+<br><br><table name="nepolozeniUUpisanojGod" class="list" style="width: 100%">
+<caption>Неположени испити из школске 2022/2023.</caption>
+<thead>
+<tr>
+<th width="60px">Ознака</th><th width="35%">Назив</th><th width="6%">ЕСПБ</th><th width="6%">Сем 1</th><th width="9%">Слободно</th><th width="6%">Сем 2</th><th width="9%">Слободно</th><th width="auto">Год</th><th width="6%"></th><th width="auto"></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td style="font-weight: bold;">РМ04</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFiJwAG9wuaUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Објектно-оријентисано програмирање</a></td><td>5</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>2.</td><td></td><td><span><span id="AutogenID-738519262"><span style="color: red;">Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="evenRow">
+<td style="font-weight: bold;">М2.29</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcHSHABgaBCJUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Анализа 3А</a></td><td>5</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>3.</td><td></td><td><span><span id="AutogenID-1502014193"><span style="color: red;">Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="oddRow">
+<td style="font-weight: bold;">М5.04</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFCDQDTebv6UQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Статистички софтвер 1</a></td><td>3</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>3.</td><td></td><td><span><span id="AutogenID-1853582421"><span style="color: red;">Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="evenRow">
+<td style="font-weight: bold;">М5.03</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFCHQBFSbyNUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Теорија вероватноћа</a></td><td>10</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>3.</td><td></td><td><span><span id="AutogenID-911087503"><span style="color: red;">Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="oddRow">
+<td style="font-weight: bold;">М5.05</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFCCwD4NQ3zUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Математичка статистика</a></td><td>10</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>3.</td><td></td><td><span><span id="AutogenID-1645742761"><span style="color: red;">Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="evenRow">
+<td style="font-weight: bold;">М5.06</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFCBwDNkG4aUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Случајни процеси</a></td><td>9</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>3.</td><td></td><td><span><span id="AutogenID-1040134787"><span style="color: red;">Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="oddRow">
+<td style="font-weight: bold;">М5.07</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFCDwDh8WD0UQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Статистички софтвер 2</a></td><td>3</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>3.</td><td></td><td><span><span id="AutogenID-1463819857"><span style="color: red;">Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="evenRow">
+<td style="font-weight: bold;">М5.08</td><td><a href="javascript: ;" onclick="edit('kurseviIGrupe?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcHCAACCzG8OUQAAAA%3D%3D&amp;blankMode=yes', 600, 400, true); return false;">Теорија узорака</a></td><td>5</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>3.</td><td></td><td><span><span id="AutogenID-1650401602"><span style="color: red;">Нема курса у семестрима.</span> </span></span></td></tr>
+</tbody>
+</table>
+<br><br><table name="izabraniModuli" class="list" style="width: 100%">
+<caption>Модули</caption>
+<thead>
+<tr>
+<th width="6%"></th><th width="60px">Ознака</th><th width="29%">Назив</th><th>Претходи ЕСПБ</th><th width="6%">ЕСПБ</th><th></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr style="font-weight: bold; height: 20px;" class="oddRow">
+<td colspan="6">Уписани модули</td></tr>
+<tr class="evenRow">
+<td></td><td>1МС.0.15</td><td>Статистика, актуарска и финансијска математика (основни)</td><td>0</td><td>60</td><td></td></tr>
+<tr class="oddRow">
+<td></td><td>1МС.15</td><td>Статистика, актуарска и финансијска математика</td><td>60</td><td>180</td><td></td></tr>
+</tbody>
+</table>
+<br><input name="noviIzabranModul" type="hidden" value="-nullObject-"><table name="raspoloziviObavezni" class="list" style="width: 100%">
+<caption>Обавезни предмети</caption>
+<thead>
+<tr>
+<th width="60px">Ознака</th><th width="35%">Назив</th><th width="6%">ЕСПБ</th><th width="6%">Сем 1</th><th width="9%">Слободно</th><th width="6%">Сем 2</th><th width="9%">Слободно</th><th width="6%"></th><th width="auto">Год</th><th width="auto"></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>М1.06</td><td>Алгебра 2</td><td>5</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span><br><span style="font-weight: bold;">1МЛ.15, 1ММ.15, 1МП.15, 1МС.15</span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span><br><span style="color: red;">1МР.15, 1МА.15</span></span></td><td>4.</td><td></td><td><span><span id="AutogenID-924132098"><span>Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="evenRow">
+<td>М5.10</td><td>Елементи актуарске математике</td><td>5</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>4.</td><td></td><td><span><span id="AutogenID-1893861279"><span style="color: red;">Незадовољен услов.</span> <span>Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="oddRow">
+<td>М1.14</td><td>Методика наставе математике и рачунарства</td><td>5</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>4.</td><td></td><td><span><span id="AutogenID-73080657"><span>Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="evenRow">
+<td>М5.09</td><td>Статистички софтвер 3</td><td>4</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>4.</td><td></td><td><span><span id="AutogenID-990564411"><span style="color: red;">Незадовољен услов.</span> <span>Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="oddRow">
+<td>М5.11</td><td>Временске серије и примене у финансијама</td><td>6</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>4.</td><td></td><td><span><span id="AutogenID-1183743450"><span style="color: red;">Незадовољен услов.</span> <span>Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="evenRow">
+<td>М2.08</td><td>Диференцијалне једначине Б</td><td>5</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>4.</td><td></td><td><span><span id="AutogenID-647813668"><span>Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="oddRow">
+<td>М5.19</td><td>Елементи финансијске математике</td><td>6</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>4.</td><td></td><td><span><span id="AutogenID-836570577"><span style="color: red;">Незадовољен услов.</span> <span>Нема курса у семестрима.</span> </span></span></td></tr>
+<tr class="evenRow">
+<td>М5.12</td><td>Статистички софтвер 4</td><td>4</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td>4.</td><td></td><td><span><span id="AutogenID-1570446661"><span style="color: red;">Незадовољен услов.</span> <span>Нема курса у семестрима.</span> </span></span></td></tr>
+</tbody>
+</table>
+<br><br><table name="izborni" class="list" style="width: 100%">
+<caption>Изборни предмети</caption>
+<thead>
+<tr>
+<th width="60px">Ознака</th><th width="35%">Назив</th><th width="6%">ЕСПБ</th><th width="6%">Сем 1</th><th width="9%">Слободно</th><th width="6%">Сем 2</th><th width="9%">Слободно</th><th width="6%">Избаци</th><th width="auto"></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>15-М3.04</td><td>Геометрија 4</td><td>5</td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="disabled" type="checkbox" disabled="disabled"></td><td><span></span></td><td><input name="izborni-izbaci-1894" type="checkbox"></td><td><span><span id="AutogenID-2049258830"><span>Нема курса у семестрима.</span> </span></span></td></tr>
+</tbody>
+</table>
+<br><br><div class="non-printable"><label>Нови изборни предмет <span><span style="padding: 0; margin: 0;" class="outer-img-span"><img src="izborpred_files/quick-help.gif" id="quick-help-img-1438846411-2025764457" class="quick-help"></span></span>&nbsp;<select name="noviIzborni" style="width: auto; height: auto;" multiple="true" size="6">
+<optgroup label="Статистика, актуарска и финансијска математика"></optgroup><optgroup label="Изборни блок МС1"><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsDcBaS4gZixh4Lww48L8C3MuLDQEAGS4RH-uAAAA">Геометрија 5 (М3.07)</option></optgroup><optgroup label="Изборни блок МС2"><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsB8E0lxAzFjCwHlhxoX5F-ZcWGgEAMwmsmmuAAAA">Дисперзиона анализа (15-М5.14)</option><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsB8A0lxAzFjCwHlhxoX5F-ZcWGgEAFKlaPauAAAA">Линеарни статистички модели (М5.13)</option></optgroup><optgroup label="Изборни блок МС3"><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsBcDaS4gZixh4Lww48L8C3MuLDQGALC97hSuAAAA">Одабрана поглавља астрономије (АМ02)</option><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsJcAaS4gZixh4Lww48L8C3MuLDQGAOg7CX2uAAAA">Увод у теоријску механику (М2.10)</option></optgroup><optgroup label="Изборни блок МС4"><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsJcDaS4gZixh4Lww48L8C3MuLDQBAKgsc5iuAAAA">Веб програмирање (РМ07)</option><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsGcDaS4gZixh4Lww48L8C3MuLDQBAIkznOSuAAAA">Очигледна топологија (15-М6.01)</option><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsMcBaS4gZixh4Lww48L8C3MuLDQBAJiDk7WuAAAA">Програмски пакети у математици (М4.02)</option><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsB8B0lxAzFjCwHlhxoX5F-ZcWGgCANwE8g2uAAAA">Теорија информације (15-М5.17)</option><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsMcCaS4gZixh4Lww48L8C3MuLDQBAHsBjc6uAAAA">Увод у филозофију (С1.02)</option></optgroup><optgroup label="Изборни блок МС5"><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwsO8C0lxAzFjCwHlhxoX5F-ZcWGgKAD9C94GuAAAA">Анализа 3Б (М2.30)</option><option value="H4sIAAAAAAAAAFvzloG1uIhBKzexJE2vuKQ0JTMvLV8vJUnPsyopvygvM6AoNSU3tSQssSgzKzGvJNEzJYf705bgtQpFTAysngzsmSkBOYl5iZ4MXEAWRC2Qw5mZku6bn1KaA2RzANnBualFiT4MvMWZaUWJ7kWlBamZVUklDEI-WYllifpAA9L1g0uKMvPSrSsKGBgYbjEwcPoAaS4gZixh4Lww48L8C3MuLDQFAB_cBqauAAAA">Функционална анализа (М2.24)</option></optgroup></select>
+</label></div><br><br><div><label>Напомена <textarea name="napomena" style="width: auto; height: auto; vertical-align: middle;" rows="5" cols="80"></textarea></label></div><br><br><br><span>Одабрано је 0 ЕСПБ. <br><br>* Факултет задржава право да премести студента са једног изборног предмета на други.</span></td></tr><tr class="form-table"><td class="submit-reset"><span class="non-printable"><input name="promeniDugme" type="submit" value="Промени" onclick="return(promeni(this, true));"> <input type="reset" value="Поништи измене" onclick="return(confirm('Да ли заиста желите да занемарите промене које сте направили?'))"></span></td></tr></tbody></table>
+<input type="hidden" name="csrfToken" value="9185494925710844590"></form><script language="javascript">
+			
+			
+			enableShowHide('polozeniPreth', 'Положени испити пре школске 2022/2023.', true);
+			enableShowHide('polozeniUUpisanoj', 'Положени испити из школске 2022/2023.', true);
+
+		</script><a name="dno" id="dno"></a><div id="quick-bottom" class="non-printable"><hr id="quick-bottom-hr"><a href="javascript: ;" onclick="edit('zavisnostiPredmeta?blankMode=blankMode', 800, 600, true); return false;">Зависности предмета</a> | <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/ankete">Анкете</a> | <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/sv20ObrazacNovi?dosije=H4sIAAAAAAAAAFvzloG1uIhBMjexJE2vuKQ0JTMvLV8vJUnPJb84MyvVM6X7bvaddIsKfiYGJh8G7swUt8Ts0pyS1JLEEgZhn6zEskT9nMS8dH3PvJLU9NQiax8Gtsy8lNTs4kKGOgbGigKg2YIgVXogVXpQVUKPFiz53thuwcTA6MnAWpaYU5paUcQggFDnV5qblFrUtmaqLPeUB91MDAwVBQwMDIxgQ5kZTYRdAGIS3KC3AAAA&amp;skipOutputProcessing=skipOutputProcessing" target="_blank">Попуњен ШВ-20 образац</a>
+			<br><div style="width: 100%; height: 3px;"></div><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing=skipOutputProcessing#PlaniranjePredmeta" target="_blank">Упутство</a></div><div id="copyright-msg" class="non-printable"><hr>
+												Информациони систем СтудИнфо, верзија 2022-12
+												© 2005-2023 Универзитет у Београду - Математички факултет
+											</div></td><td id="quick" class="non-printable"><ul><li><div class="li-content"><a href="javascript: ;" onclick="edit('zavisnostiPredmeta?blankMode=blankMode', 800, 600, true); return false;">Зависности предмета</a></div></li><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/ankete">Анкете</a></div></li><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/sv20ObrazacNovi?dosije=H4sIAAAAAAAAAFvzloG1uIhBMjexJE2vuKQ0JTMvLV8vJUnPJb84MyvVM6X7bvaddIsKfiYGJh8G7swUt8Ts0pyS1JLEEgZhn6zEskT9nMS8dH3PvJLU9NQiax8Gtsy8lNTs4kKGOgbGigKg2YIgVXogVXpQVUKPFiz53thuwcTA6MnAWpaYU5paUcQggFDnV5qblFrUtmaqLPeUB91MDAwVBQwMDIxgQ5kZTYRdAGIS3KC3AAAA&amp;skipOutputProcessing=skipOutputProcessing" target="_blank">Попуњен ШВ-20 образац</a>
+			</div></li><li class="no-list"><div class="li-content"><br></div></li><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing=skipOutputProcessing#PlaniranjePredmeta" target="_blank">Упутство</a></div></li></ul></td></tr></tbody></table>
+
+
+<table class="non-printable" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8; left: 977px; top: 304px;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="izborpred_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table><table class="non-printable invisible" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="izborpred_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table><table class="non-printable invisible" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="izborpred_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table><table class="non-printable invisible" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="izborpred_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table><table class="non-printable invisible" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="izborpred_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table><table class="non-printable invisible" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="izborpred_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table><div id="_tooltip_AutogenID-738519262" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-1502014193" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-1853582421" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-911087503" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-1645742761" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-1040134787" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-1463819857" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-1650401602" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-924132098" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-1893861279" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br><br>- Случајни процеси (М5.06)<br><br>У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-73080657" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-990564411" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br><br>- Математичка статистика (М5.05)<br><br>У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-1183743450" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br><br>- Случајни процеси (М5.06)<br><br>У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-647813668" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-836570577" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br><br>- Случајни процеси (М5.06)<br><br>У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-1570446661" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Следећи условни предмети морају бити положени или одабрани за 1. семестар:<br><br>- Математичка статистика (М5.05)<br><br>У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_AutogenID-2049258830" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">У 1. и 2. семестру не постоји курс.</div><div id="_tooltip_quick-help-img-1438846411-2025764457" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Држите притиснуто дугме Ctrl приликом избора ако желите да изаберете више од једне ставке.<br><br>Ако желите да поништите избор неке ставке, држите притиснуто дугме Ctrl, и кликните на ту ставку.</div></body></html>

@@ -1,0 +1,221 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><link href="kursigrupe1_files/osnovno_003.css" rel="stylesheet" type="text/css"><link href="kursigrupe1_files/osnovno_002.css" rel="stylesheet" type="text/css" media="screen"><link href="kursigrupe1_files/osnovno.css" rel="stylesheet" type="text/css" media="print"><link href="kursigrupe1_files/sviKorisnici_002.css" rel="stylesheet" type="text/css"><link href="kursigrupe1_files/sviKorisnici_003.css" rel="stylesheet" type="text/css" media="screen"><link href="kursigrupe1_files/sviKorisnici.css" rel="stylesheet" type="text/css" media="print"><link href="kursigrupe1_files/studenti_002.css" rel="stylesheet" type="text/css"><link href="kursigrupe1_files/studenti_003.css" rel="stylesheet" type="text/css" media="screen"><link href="kursigrupe1_files/studenti.css" rel="stylesheet" type="text/css" media="print"><link href="kursigrupe1_files/aplikacija.css" rel="stylesheet" type="text/css" media="print"><style type="text/css" media="screen">
+				td#cont {
+					background-image: url(/StudInfo/images/studenti/cont-bg.gif);
+					
+				}
+			</style><style type="text/css">
+			caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			table.list caption,
+			.caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			td#menu table tbody tr td {
+				background-image: url(/StudInfo/images/studenti/menuitem-bg.gif);
+			}
+			td#menu table tbody tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+			div.submenu table tr td {
+				background-image: url(/StudInfo/images/studenti/submenuitem-bg.gif);
+			}
+			div.submenu table tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+		</style><script type="text/javascript" src="kursigrupe1_files/jquery.js"></script><script type="text/javascript" src="kursigrupe1_files/jquery-extend.js"></script><script type="text/javascript" src="kursigrupe1_files/jquery.SI.js"></script><script type="text/javascript" src="kursigrupe1_files/jquery.Table2CSV.js"></script><script type="text/javascript" src="kursigrupe1_files/javascript.js"></script><script type="text/javascript" src="kursigrupe1_files/controls.js"></script><script type="text/javascript" src="kursigrupe1_files/menus.js"></script><script type="text/javascript" src="kursigrupe1_files/Util.js"></script><script type="text/javascript" src="kursigrupe1_files/Position.js"></script><script type="text/javascript" src="kursigrupe1_files/Tooltip.js"></script><script type="text/javascript" src="kursigrupe1_files/Report.js"></script><script type="text/javascript">
+			<!--
+			function initCalendars() {
+				
+			}
+			//-->
+		</script><script type="text/javascript">
+			<!--
+			function initTBAutocomplete() {
+			
+			}
+			//-->
+		</script><script type="text/javascript" src="kursigrupe1_files/forms.js"></script><script type="text/javascript">
+		function initFormValidation()
+		{
+			
+		}
+		</script><script type="text/javascript">
+					function initSessionControl() {}
+				</script><script type="text/javascript"></script><script type="text/javascript">
+			$(window).load(function(e){
+				
+				$("table.list").drawList();
+				
+				EXPORT_ICON = '/StudInfo/images/export.png';
+				$("table.list,table.exportable").Table2CSV_prepare("/StudInfo/file/", ["csvIgnore"], "not-exportable");
+				
+				
+				$(".submitlink").bind('click', function(e) {
+					if (e.which == 2)
+						return false;
+				});
+				
+				
+				$("table.object-edit").formatObjectEdit();
+
+				initCalendars();
+				initTBAutocomplete();
+				initFormValidation();
+				initSessionControl();
+				
+				
+				 
+				$.SI.Form.focusFirst();
+						
+			});
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>
+			Курсеви и групе у 1. семестру 2022/2023. године
+		</title></head>
+	<body><div id="sm3" class="submenu" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a></td></tr></tbody></table></div><div id="sm15" class="submenu" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Одјављивање</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/spisakPrijavljivanja">Списак пријављивања</a></td></tr></tbody></table></div><table style="height: 100%;"><tbody><tr><td id="left"><table id="left-table"><tbody><tr><td style="text-align: center; padding: 5px; font-weight: bold;">Универзитет у Београду - Математички факултет</td></tr><tr><td id="logo"><div class="logo"><img id="grb" src="prvastrana_files/grb.gif"></div></td></tr><tr><td style="font-weight: bold; text-align: left; padding: 0 10px 5px 10px;">Душан Гарић<br>20/2019</td></tr><tr><td id="menu"><table><tbody><tr><td><a id="m1" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/" onmouseover="showMenu('m1', 'sm1')" onmouseout="hideMenu('sm1')">Прва страна</a></td></tr><tr><td><a id="m2" href="kursigrupe1.htm" onmouseover="showMenu('m2', 'sm2')" onmouseout="hideMenu('sm2')">Курсеви и групе</a></td></tr><tr><td><a id="m3" href="ispiti.htm" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')">Испити</a></td></tr><tr><td><a id="m4" href="financije.htm" onmouseover="showMenu('m4', 'sm4')" onmouseout="hideMenu('sm4')">Финансије</a></td></tr><tr><td><a id="m5" href="upisanegodine.htm" onmouseover="showMenu('m5', 'sm5')" onmouseout="hideMenu('sm5')">Уписане године</a></td></tr><tr><td><a id="m6" href="izborpred.htm" onmouseover="showMenu('m6', 'sm6')" onmouseout="hideMenu('sm6')">Избор предмета</a></td></tr><tr><td><a id="m7" href="upisgodine.htm" onmouseover="showMenu('m7', 'sm7')" onmouseout="hideMenu('sm7')">Упис године</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m9" href="molbe.htm" onmouseover="showMenu('m9', 'sm9')" onmouseout="hideMenu('sm9')">Молбе</a></td></tr><tr><td><a id="m10" href="licnipodaci.htm" onmouseover="showMenu('m10', 'sm10')" onmouseout="hideMenu('sm10')">Лични подаци</a></td></tr><tr><td><a id="m11" href="uputstvo.htm" onmouseover="showMenu('m11', 'sm11')" onmouseout="hideMenu('sm11')" target="_blank">Упутство</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m13" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/#" onmouseover="showMenu('m13', 'sm13')" onmouseout="hideMenu('sm13')" onclick="print(); return false;">Штампај</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m15" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Кориснички налог</a></td></tr></tbody></table></td></tr><tr><td id="left-footer"></td></tr></tbody></table></td><td id="cont"><a name="vrh" id="vrh"></a><h1>Активности у последњих 30 дана</h1><div class="page-date-and-time">18. фебруар 2023. 02:19</div><p>			Курсеви и групе у 1. семестру 2022/2023. године
+		</h1><div class="page-date-and-time">18. фебруар 2023. 02:27</div><label>Семестар <select name="semestri" onchange="jump(this)">
+<option name="sem-matf.studinfo.db.SemestarId@e4d45" value="kurseviIGrupe?semestar=H4sIAAAAAAAAAFvzloG1uIhBOjexJE2vuKQ0JTMvLV8vJUkvODU3tbgkscgzZY9osYVkb-VFJgbmYAa29HygksRgBo5iqAIfBu7MFLfE7NKcktSSxBIGYZ-sxLJE_ZzEvHR9z7yS1PTUIuuKAvZnDIxAewRBcnogOT2onNCjBUu-N7ZbMDEwejKwliXmlKZWFDEIINT5leYmpRa1rZkqyz3lQTcTA0NFAQMDAyMAkJFwFLkAAAA%3D" selected="selected">2022/23 - 1</option><option name="sem-matf.studinfo.db.SemestarId@e4d46" value="kurseviIGrupe?semestar=H4sIAAAAAAAAAFvzloG1uIhBOjexJE2vuKQ0JTMvLV8vJUkvODU3tbgkscgzZY9osYVkb-VFJgbmYAa29HygksRgBo5iqAIfBu7MFLfE7NKcktSSxBIGYZ-sxLJE_ZzEvHR9z7yS1PTUIuuKAvZnDExAewRBcnogOT2onNCjBUu-N7ZbMDEwejKwliXmlKZWFDEIINT5leYmpRa1rZkqyz3lQTcTA0NFAQMDAyMAvq3kybkAAAA%3D">2022/23 - 2</option><option name="sem-matf.studinfo.db.SemestarId@e4d20" value="kurseviIGrupe?semestar=H4sIAAAAAAAAAFvzloG1uIhBOjexJE2vuKQ0JTMvLV8vJUkvODU3tbgkscgzZY9osYVkb-VFJgbmYAa29HygksRgBo5iqAIfBu7MFLfE7NKcktSSxBIGYZ-sxLJE_ZzEvHR9z7yS1PTUIuuKAvanDIxAewRBcnogOT2onNCjBUu-N7ZbMDEwejKwliXmlKZWFDEIINT5leYmpRa1rZkqyz3lQTcTA0NFAQMDAyMArzkYMLkAAAA%3D">2021/22 - 1</option><option name="sem-matf.studinfo.db.SemestarId@e4d21" value="kurseviIGrupe?semestar=H4sIAAAAAAAAAFvzloG1uIhBOjexJE2vuKQ0JTMvLV8vJUkvODU3tbgkscgzZY9osYVkb-VFJgbmYAa29HygksRgBo5iqAIfBu7MFLfE7NKcktSSxBIGYZ-sxLJE_ZzEvHR9z7yS1PTUIuuKAvanDExAewRBcnogOT2onNCjBUu-N7ZbMDEwejKwliXmlKZWFDEIINT5leYmpRa1rZkqyz3lQTcTA0NFAQMDAyMAgQWM7bkAAAA%3D">2021/22 - 2</option><option name="sem-matf.studinfo.db.SemestarId@e4cfb" value="kurseviIGrupe?semestar=H4sIAAAAAAAAAFvzloG1uIhBOjexJE2vuKQ0JTMvLV8vJUkvODU3tbgkscgzZY9osYVkb-VFJgbmYAa29HygksRgBo5iqAIfBu7MFLfE7NKcktSSxBIGYZ-sxLJE_ZzEvHR9z7yS1PTUIuuKAvYnDIxAewRBcnogOT2onNCjBUu-N7ZbMDEwejKwliXmlKZWFDEIINT5leYmpRa1rZkqyz3lQTcTA0NFAQMDAyMAuqE_LLkAAAA%3D">2020/21 - 1</option><option name="sem-matf.studinfo.db.SemestarId@e4cfc" value="kurseviIGrupe?semestar=H4sIAAAAAAAAAFvzloG1uIhBOjexJE2vuKQ0JTMvLV8vJUkvODU3tbgkscgzZY9osYVkb-VFJgbmYAa29HygksRgBo5iqAIfBu7MFLfE7NKcktSSxBIGYZ-sxLJE_ZzEvHR9z7yS1PTUIuuKAvYnDExAewRBcnogOT2onNCjBUu-N7ZbMDEwejKwliXmlKZWFDEIINT5leYmpRa1rZkqyz3lQTcTA0NFAQMDAyMAlJ2r8bkAAAA%3D">2020/21 - 2</option><option name="sem-matf.studinfo.db.SemestarId@e4cd6" value="kurseviIGrupe?semestar=H4sIAAAAAAAAAFvzloG1uIhBOjexJE2vuKQ0JTMvLV8vJUkvODU3tbgkscgzZY9osYVkb-VFJgbmYAa29HygksRgBo5iqAIfBu7MFLfE7NKcktSSxBIGYZ-sxLJE_ZzEvHR9z7yS1PTUIuuKAvbHDIxAewRBcnogOT2onNCjBUu-N7ZbMDEwejKwliXmlKZWFDEIINT5leYmpRa1rZkqyz3lQTcTA0NFAQMDAyMA0WnJeLkAAAA%3D">2019/20 - 1</option><option name="sem-matf.studinfo.db.SemestarId@e4cd7" value="kurseviIGrupe?semestar=H4sIAAAAAAAAAFvzloG1uIhBOjexJE2vuKQ0JTMvLV8vJUkvODU3tbgkscgzZY9osYVkb-VFJgbmYAa29HygksRgBo5iqAIfBu7MFLfE7NKcktSSxBIGYZ-sxLJE_ZzEvHR9z7yS1PTUIuuKAvbHDExAewRBcnogOT2onNCjBUu-N7ZbMDEwejKwliXmlKZWFDEIINT5leYmpRa1rZkqyz3lQTcTA0NFAQMDAyMA_1VdpbkAAAA%3D">2019/20 - 2</option></select>
+</label><br><br><table name="tabelaKurseva" width="100%">
+<thead style="display: none;"><tr><th></th></tr></thead><tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr>
+<td><table name="kurs14647" class="list not-exportable" width="100%">
+<caption><a style="font-size:12px;" href="javascript: ;" onclick="edit('detaljiOKursuIPredmetu?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcHSHABgaBCJUQAAAA%3D%3D', 600, 400, true); return false;">Анализа 3А (М2.29)</a></caption>
+<thead>
+<tr>
+<th style="width: 210px">Група</th><th style="">Наставник</th><th style="width: 70px; text-align: right">Активност</th><th style="width: 80px; text-align: right"></th><th style="width: 70px; text-align: right"></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>3нв</td><td><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCw2AEAUIS3w7cAAAA%3D', 580, 300, true); return false;">проф. др Данко Јоцић</a></td><td style="text-align: right">Предавања</td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/grupa?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGS_MSBlbjC3svbAIA_GedWNwAAAA%3D">Обавезе</a></td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/studentiSaSlikama?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGS_MSBlbjC3svbAIA_GedWNwAAAA%3D">Студенти</a></td></tr>
+<tr class="evenRow">
+<td>3вб</td><td><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwmgAAD1x5OrcAAAA%3D', 580, 300, true); return false;">Матија Миловић</a></td><td style="text-align: right">Вежбе</td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/grupa?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGS_MSBlbjC5subAQAe3HIytwAAAA%3D">Обавезе</a></td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/studentiSaSlikama?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGS_MSBlbjC5subAQAe3HIytwAAAA%3D">Студенти</a></td></tr>
+</tbody>
+</table>
+</td></tr>
+<tr>
+<td><table name="obaveze" class="list not-exportable" width="100%">
+<thead>
+<tr>
+<th style="width: 50px">Термин</th><th style="width: 150px">Обавезе</th><th>Опис</th><th style="width: 70px; text-align: right;">Активност</th><th style="width: 80px; text-align: right;">Макс. поена</th><th style="width: 70px; text-align: right">Поена</th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>15</td><td>Писмено-усмени испит</td><td>Писмено-усмени испит + предиспитне обавезе</td><td style="text-align: right;">Предавања</td><td style="text-align: right;">100</td><td style="text-align: right">-</td></tr>
+<tr class="evenRow">
+<td colspan="2"></td><td style="text-align: right; font-style: italic; font-weight: bold;">Укупно</td><td style="text-align: right; font-weight: bold;" colspan="2">100</td><td style="text-align: right; font-weight: bold;">0</td></tr>
+</tbody>
+</table>
+</td></tr>
+<tr>
+<td style="background-color: #FFFFFF; height: 35px; border: none;" colspan="6"></td></tr>
+<tr>
+<td><table name="kurs14437" class="list not-exportable" width="100%">
+<caption><a style="font-size:12px;" href="javascript: ;" onclick="edit('detaljiOKursuIPredmetu?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcEiFQD5aW4VUQAAAA%3D%3D', 600, 400, true); return false;">Диференцијалне једначине А (М2.06)</a></caption>
+<thead>
+<tr>
+<th style="width: 210px">Група</th><th style="">Наставник</th><th style="width: 70px; text-align: right">Активност</th><th style="width: 80px; text-align: right"></th><th style="width: 70px; text-align: right"></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>3лнв</td><td><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCw1AAA7KRlW7cAAAA%3D', 580, 300, true); return false;">др Марија Микић</a></td><td style="text-align: right">Предавања</td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/grupa?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGi9QSBnbjC7sv7L2wCQD9mh_z3gAAAA%3D%3D">Обавезе</a></td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/studentiSaSlikama?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGi9QSBnbjC7sv7L2wCQD9mh_z3gAAAA%3D%3D">Студенти</a></td></tr>
+<tr class="evenRow">
+<td>3в-в</td><td><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCw1AAA7KRlW7cAAAA%3D', 580, 300, true); return false;">др Марија Микић</a></td><td style="text-align: right">Вежбе</td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/grupa?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGi9QSBjbjC5t0L2wCAKV0DbzdAAAA">Обавезе</a></td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/studentiSaSlikama?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGi9QSBjbjC5t0L2wCAKV0DbzdAAAA">Студенти</a></td></tr>
+</tbody>
+</table>
+</td></tr>
+<tr>
+<td><table name="obaveze" class="list not-exportable" width="100%">
+<thead>
+<tr>
+<th style="width: 50px">Термин</th><th style="width: 150px">Обавезе</th><th>Опис</th><th style="width: 70px; text-align: right;">Активност</th><th style="width: 80px; text-align: right;">Макс. поена</th><th style="width: 70px; text-align: right">Поена</th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>14</td><td>Писмено-усмени испит</td><td>Завршни испит</td><td style="text-align: right;">Предавања</td><td style="text-align: right;">100</td><td style="text-align: right">75</td></tr>
+<tr class="evenRow">
+<td colspan="2"></td><td style="text-align: right; font-style: italic; font-weight: bold;">Укупно</td><td style="text-align: right; font-weight: bold;" colspan="2">100</td><td style="text-align: right; font-weight: bold;">75</td></tr>
+</tbody>
+</table>
+</td></tr>
+<tr>
+<td style="background-color: #FFFFFF; height: 35px; border: none;" colspan="6"></td></tr>
+<tr>
+<td><table name="kurs14374" class="list not-exportable" width="100%">
+<caption><a style="font-size:12px;" href="javascript: ;" onclick="edit('detaljiOKursuIPredmetu?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFCDQDTebv6UQAAAA%3D%3D', 600, 400, true); return false;">Статистички софтвер 1 (М5.04)</a></caption>
+<thead>
+<tr>
+<th style="width: 210px">Група</th><th style="">Наставник</th><th style="width: 70px; text-align: right">Активност</th><th style="width: 80px; text-align: right"></th><th style="width: 70px; text-align: right"></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>3в-в</td><td><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwygAA9fTMD7cAAAA%3D', 580, 300, true); return false;">Бојана Тодић</a></td><td style="text-align: right">Вежбе</td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/grupa?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGC7USBjbjC5t0L2wCAAbIgMndAAAA">Обавезе</a></td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/studentiSaSlikama?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGC7USBjbjC5t0L2wCAAbIgMndAAAA">Студенти</a></td></tr>
+</tbody>
+</table>
+</td></tr>
+<tr>
+<td><table name="obaveze" class="list not-exportable" width="100%">
+<thead>
+<tr>
+<th style="width: 50px">Термин</th><th style="width: 150px">Обавезе</th><th>Опис</th><th style="width: 70px; text-align: right;">Активност</th><th style="width: 80px; text-align: right;">Макс. поена</th><th style="width: 70px; text-align: right">Поена</th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>15</td><td>Семинарски рад и одбрана</td><td>Семинарски рад и одбрана</td><td style="text-align: right;">Вежбе</td><td style="text-align: right;">100</td><td style="text-align: right">-</td></tr>
+<tr class="evenRow">
+<td colspan="2"></td><td style="text-align: right; font-style: italic; font-weight: bold;">Укупно</td><td style="text-align: right; font-weight: bold;" colspan="2">100</td><td style="text-align: right; font-weight: bold;">0</td></tr>
+</tbody>
+</table>
+</td></tr>
+<tr>
+<td style="background-color: #FFFFFF; height: 35px; border: none;" colspan="6"></td></tr>
+<tr>
+<td><table name="kurs14375" class="list not-exportable" width="100%">
+<caption><a style="font-size:12px;" href="javascript: ;" onclick="edit('detaljiOKursuIPredmetu?kurs=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFEvJzEvXc8zryQ1PbVI6NGCJd8b2y2YGBg9GVjLEnNKUyuKGAQQ6vxKc5NSi9rWTJXlnvKgm4mBoaKAgcFCHQBFSbyNUQAAAA%3D%3D', 600, 400, true); return false;">Теорија вероватноћа (М5.03)</a></caption>
+<thead>
+<tr>
+<th style="width: 210px">Група</th><th style="">Наставник</th><th style="width: 70px; text-align: right">Активност</th><th style="width: 80px; text-align: right"></th><th style="width: 70px; text-align: right"></th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>3в</td><td><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwcgAAiCAWFbcAAAA%3D', 580, 300, true); return false;">др Марија Цупарић</a></td><td style="text-align: right">Предавања</td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/grupa?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGC_USBmbjC5sA9WRqX9oAAAA%3D">Обавезе</a></td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/studentiSaSlikama?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGC_USBmbjC5sA9WRqX9oAAAA%3D">Студенти</a></td></tr>
+<tr class="evenRow">
+<td>3вб</td><td><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwxgIA84UXDrcAAAA%3D', 580, 300, true); return false;">Благоје Ивановић</a></td><td style="text-align: right">Вежбе</td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/grupa?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGC_USBlbjC5subAQANFjKidwAAAA%3D">Обавезе</a></td><td style="text-align: right"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/studentiSaSlikama?grupa=H4sIAAAAAAAAAFvzloG1uIhBIjexJE2vuKQ0JTMvLV8vJUnPvai0INEzZQ__zHvnb--cz8TA7MPAnZnilphdmlOSWpJYwiDsk5VYlqifk5iXru-ZV5Kanlpk7cPAnpniXVpUnFjIUMfA6AM0PDOtCKhYCElxcElRZl66dUUB0GJBkLAeSFgPaobQowVLvje2WzAxMHoysJYl5pSmVhQxCCDU-ZXmJqUWta2ZKss95UE3EwNDRQEDAwNjMchGFgYGC_USBlbjC5subAQANFjKidwAAAA%3D">Студенти</a></td></tr>
+</tbody>
+</table>
+</td></tr>
+<tr>
+<td><table name="obaveze" class="list not-exportable" width="100%">
+<thead>
+<tr>
+<th style="width: 50px">Термин</th><th style="width: 150px">Обавезе</th><th>Опис</th><th style="width: 70px; text-align: right;">Активност</th><th style="width: 80px; text-align: right;">Макс. поена</th><th style="width: 70px; text-align: right">Поена</th></tr>
+</thead>
+<tfoot>
+<tr>
+<td style="padding: 1 0 2 0; text-align: right;" colspan="6">Потребно је освојити најмање 15 поена на самом испиту.</td></tr>
+</tfoot>
+<tbody>
+<tr class="oddRow">
+<td>20</td><td>Усмени испит</td><td>Одговарање на случајно иѕабрана питања.</td><td style="text-align: right;">Предавања</td><td style="text-align: right;">100</td><td style="text-align: right">-</td></tr>
+<tr class="evenRow">
+<td colspan="2"></td><td style="text-align: right; font-style: italic; font-weight: bold;">Укупно</td><td style="text-align: right; font-weight: bold;" colspan="2">100</td><td style="text-align: right; font-weight: bold;">0</td></tr>
+</tbody>
+</table>
+</td></tr>
+<tr>
+<td style="background-color: #FFFFFF; height: 35px; border: none;" colspan="6"></td></tr>
+</tbody>
+</table><a name="dno" id="dno"></a><div id="quick-bottom" class="non-printable"><hr id="quick-bottom-hr"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/zavisnostiPredmeta">Преглед зависности предмета</a><br><div style="width: 100%; height: 3px;"></div><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing=skipOutputProcessing#KurseviIGrupe" target="_blank">Упутство</a></div><div id="copyright-msg" class="non-printable"><hr>
+												Информациони систем СтудИнфо, верзија 2022-12
+												© 2005-2023 Универзитет у Београду - Математички факултет
+											</div></td><td id="quick" class="non-printable"><ul><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/zavisnostiPredmeta">Преглед зависности предмета</a></div></li><li class="no-list"><div class="li-content"><br></div></li><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing=skipOutputProcessing#KurseviIGrupe" target="_blank">Упутство</a></div></li></ul></td></tr></tbody></table>
+
+</body></html>
